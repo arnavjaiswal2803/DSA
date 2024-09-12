@@ -16,12 +16,26 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
+| [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
 ## Hash Table
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
+| [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
 ## Monotonic Stack
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
+## String
+|  |
+| ------- |
+| [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
+## Bit Manipulation
+|  |
+| ------- |
+| [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
+## Counting
+|  |
+| ------- |
+| [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
 <!---LeetCode Topics End-->
