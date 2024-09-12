@@ -1,21 +1,23 @@
 class Solution {
+    void setBit(int &num, int i) {
+        num |= (1 << i);
+    }
+
+    int getBit(int num, int i) {
+        return (num & (1 << i)) > 0;
+    }
 public:
     int countConsistentStrings(string allowed, vector<string>& words) {
-        unordered_set<char> isAllowed;
-        for (auto &ch : allowed) isAllowed.insert(ch);
-
-        int count = 0;
+        int allowedChars = 0, count = words.size();
+        for (auto &ch : allowed) setBit(allowedChars, ch - 'a');
         for (auto &word : words) {
-            bool isConsistent = true;
             for (auto &ch : word) {
-                if (isAllowed.find(ch) == isAllowed.end()) {
-                    isConsistent = false;
+                if (getBit(allowedChars, ch - 'a') == 0) {
+                    count--;
                     break;
                 }
             }
-            if (isConsistent) count++;
         }
-
         return count;
     }
 };
