@@ -4,14 +4,13 @@ class Solution {
 
         int start = 0, end = 0, sum = 0, count = 0, n = nums.size();
         while (end < n) {
-            if (sum + nums[end] <= k) {
-                sum += nums[end];
-                count += end - start + 1;
-                end++;
-            } else {
+            sum += nums[end];
+            while (sum > k) {
                 sum -= nums[start];
                 start++;
             }
+            count += end - start + 1;
+            end++;
         }
         return count;
     }
