@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
@@ -112,4 +113,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
+## Greedy
+|  |
+| ------- |
+| [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
 <!---LeetCode Topics End-->
