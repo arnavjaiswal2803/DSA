@@ -10,18 +10,8 @@
  * };
  */
 class Solution {
-    void getHeight(TreeNode* root, int height, int &maxHeight) {
-        if (root == NULL) return;
-        maxHeight = max(maxHeight, height);
-
-        getHeight(root->left, height + 1, maxHeight);
-        getHeight(root->right, height + 1, maxHeight);
-    }
 public:
     int maxDepth(TreeNode* root) {
-        if (root == NULL) return 0;
-        int maxHeight = 0;
-        getHeight(root, 1, maxHeight);
-        return maxHeight;
+        return root == NULL ? 0 : 1+max(maxDepth(root->left), maxDepth(root->right));
     }
 };
