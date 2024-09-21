@@ -1,11 +1,19 @@
 class Solution {
+    void generateLexicalNumbers(int start, int limit, vector<int> &ans) {
+        for (int i = 0; i <= 9; i++) {
+            int currNum = start * 10 + i;
+            if (currNum > limit) return;
+            ans.emplace_back(currNum);
+            generateLexicalNumbers(currNum, limit, ans);
+        }
+    }
 public:
     vector<int> lexicalOrder(int n) {
-        vector<int> ans(n);
-        vector<string> numStr(n);
-        for (int i = 1; i <= n; i++) numStr[i - 1] = to_string(i);
-        sort(numStr.begin(), numStr.end());
-        for (int i = 0; i < n; i++) ans[i] = stoi(numStr[i]);
+        vector<int> ans;
+        for (int i = 1; i <= 9 && i <= n; i++) {
+            ans.push_back(i);
+            generateLexicalNumbers(i, n, ans);
+        }
         return ans;
     }
 };
