@@ -1,32 +1,15 @@
-class Booking {
-    int start;
-    int end;
-public:
-    Booking(int startt, int endd) {
-        start = startt;
-        end = endd;
-    }
-
-    int getStart() { return start; }
-
-    int getEnd() { return end; }
-};
-
 class MyCalendar {
-    vector<Booking> bookings;
+    set<pair<int, int>> bookings;
 
-    bool doesIntersect(Booking booking, int start, int end) {
-        return booking.getStart() < end && start < booking.getEnd();
+    bool doesIntersectWithNeighBours(int start, int end) {
+        auto nextBooking = bookings.lower_bound({start, end});
+        return (nextBooking != bookings.end() && nextBooking->first < end) || 
+            (nextBooking != bookings.begin() && start < prev(nextBooking)->second);
     }
 public:
-    MyCalendar() {
-        
-    }
-    
     bool book(int start, int end) {
-        for (Booking &booking : bookings) 
-            if (doesIntersect(booking, start, end)) return false;
-        bookings.push_back(Booking{start, end});
+        if (doesIntersectWithNeighBours(start, end)) return false;
+        bookings.insert({start, end});
         return true;
     }
 };
