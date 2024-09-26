@@ -16,9 +16,7 @@ class MyCalendar {
     vector<Booking> bookings;
 
     bool doesIntersect(Booking booking, int start, int end) {
-        return (start >= booking.getStart() && start < booking.getEnd()) || 
-            (end - 1 >= booking.getStart() && end <= booking.getEnd()) ||
-            (start <= booking.getStart() && end >= booking.getEnd());
+        return booking.getStart() < end && start < booking.getEnd();
     }
 public:
     MyCalendar() {
