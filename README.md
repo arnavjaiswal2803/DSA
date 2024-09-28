@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/arnavjaiswal2803/DSA/tree/master/0155-min-stack) |
 | [0729-my-calendar-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0731-my-calendar-ii) |
+| [0859-design-circular-deque](https://github.com/arnavjaiswal2803/DSA/tree/master/0859-design-circular-deque) |
 ## Array
 |  |
 | ------- |
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [0729-my-calendar-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0731-my-calendar-ii) |
+| [0859-design-circular-deque](https://github.com/arnavjaiswal2803/DSA/tree/master/0859-design-circular-deque) |
 | [0966-binary-subarrays-with-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0966-binary-subarrays-with-sum) |
 | [1034-subarrays-with-k-different-integers](https://github.com/arnavjaiswal2803/DSA/tree/master/1034-subarrays-with-k-different-integers) |
 | [1046-max-consecutive-ones-iii](https://github.com/arnavjaiswal2803/DSA/tree/master/1046-max-consecutive-ones-iii) |
@@ -89,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
+| [0859-design-circular-deque](https://github.com/arnavjaiswal2803/DSA/tree/master/0859-design-circular-deque) |
 ## Sliding Window
 |  |
 | ------- |
@@ -222,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0023-merge-k-sorted-lists) |
+| [0859-design-circular-deque](https://github.com/arnavjaiswal2803/DSA/tree/master/0859-design-circular-deque) |
 ## Divide and Conquer
 |  |
 | ------- |
