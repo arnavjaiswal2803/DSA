@@ -1,16 +1,25 @@
 class Solution {
 public:
     long long dividePlayers(vector<int>& skill) {
-        int n = skill.size();
-        sort(skill.begin(), skill.end());
-        long long chemistrySum = skill[0] * skill[n - 1];
-        int left = 1, right = n - 2;
-        while (left < right) {
-            if (skill[left] + skill [right] != skill[0] + skill[n - 1]) return -1;
-            chemistrySum += ((long long)skill[left] * (long long)skill[right]);
-            left++;
-            right--;
+        int n = skill.size(), numberOfTeams = n / 2, totalSkill = 0;
+        vector<int> skillFreq(1001, 0);
+
+        for (auto playerSkill : skill) {
+            totalSkill += playerSkill;
+            skillFreq[playerSkill]++;
         }
-        return chemistrySum;
+
+        if (totalSkill % numberOfTeams != 0) return -1;
+        int targetSkill = totalSkill / numberOfTeams;
+
+        long long chemistrySum = 0;
+        for (auto playerSkill : skill) {
+            int partnerSkill = targetSkill - playerSkill;
+            if (skillFreq[partnerSkill] == 0) return -1;
+            skillFreq[partnerSkill]--;
+            chemistrySum += ((long long)playerSkill * (long long)partnerSkill);
+        }
+
+        return chemistrySum / 2;
     }
 };
