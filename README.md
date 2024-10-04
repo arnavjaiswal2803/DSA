@@ -143,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/arnavjaiswal2803/DSA/tree/master/0062-unique-paths) |
 | [0241-different-ways-to-add-parentheses](https://github.com/arnavjaiswal2803/DSA/tree/master/0241-different-ways-to-add-parentheses) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [1370-count-number-of-nice-subarrays](https://github.com/arnavjaiswal2803/DSA/tree/master/1370-count-number-of-nice-subarrays) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/arnavjaiswal2803/DSA/tree/master/0062-unique-paths) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0241-different-ways-to-add-parentheses](https://github.com/arnavjaiswal2803/DSA/tree/master/0241-different-ways-to-add-parentheses) |
 | [2755-extra-characters-in-a-string](https://github.com/arnavjaiswal2803/DSA/tree/master/2755-extra-characters-in-a-string) |
@@ -270,4 +272,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/arnavjaiswal2803/DSA/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/arnavjaiswal2803/DSA/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
