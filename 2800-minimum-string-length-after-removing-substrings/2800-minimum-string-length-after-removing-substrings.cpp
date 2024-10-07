@@ -1,20 +1,18 @@
 class Solution {
+    bool canFormPattern(char first, char second) {
+        return ((first == 'A' && second == 'B') || (first == 'C' && second == 'D'));
+    }
 public:
     int minLength(string s) {
-        int ABIdx = s.find("AB"), CDIdx = s.find("CD");
-        while (ABIdx != string::npos || CDIdx != string::npos) {
-            if (ABIdx != string::npos) {
-                s = s.substr(0, ABIdx) + s.substr(ABIdx + 2);
+        int n = s.length();
+        stack<char> st;
+        for (int i = 0; i < n; i++) {
+            while (!st.empty() && i < n && canFormPattern(st.top(), s[i])) {
+                st.pop();
+                i++;
             }
-
-            CDIdx = s.find("CD");
-            if (CDIdx != string::npos) {
-                s = s.substr(0, CDIdx) + s.substr(CDIdx + 2);
-            }
-
-            ABIdx = s.find("AB"); 
-            CDIdx = s.find("CD");
+            if (i < n) st.push(s[i]);
         }
-        return s.size();
+        return st.size();
     }
 };
