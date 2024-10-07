@@ -1,18 +1,18 @@
 class Solution {
-    bool canFormPattern(char first, char second) {
-        return ((first == 'A' && second == 'B') || (first == 'C' && second == 'D'));
+    bool isPatternFormed(char ch1, char ch2) {
+        return (ch1 == 'A' && ch2 == 'B') || (ch1 == 'C' && ch2 == 'D'); 
     }
 public:
     int minLength(string s) {
-        int n = s.length();
-        stack<char> st;
-        for (int i = 0; i < n; i++) {
-            while (!st.empty() && i < n && canFormPattern(st.top(), s[i])) {
-                st.pop();
-                i++;
-            }
-            if (i < n) st.push(s[i]);
+        string dupStr = s;
+        int n = s.size(), read = 0, write = 0;
+        while (read < n) {
+            dupStr[write] = s[read];
+            if (write > 0 && isPatternFormed(dupStr[write - 1], dupStr[write]))
+                write--;
+            else write++;
+            read++;
         }
-        return st.size();
+        return write;
     }
 };
