@@ -4,11 +4,10 @@ class Solution {
     }
 public:
     int minLength(string s) {
-        string dupStr = s;
         int n = s.size(), read = 0, write = 0;
         while (read < n) {
-            dupStr[write] = s[read];
-            if (write > 0 && isPatternFormed(dupStr[write - 1], dupStr[write]))
+            s[write] = s[read];
+            if (write > 0 && isPatternFormed(s[write - 1], s[write]))
                 write--;
             else write++;
             read++;
