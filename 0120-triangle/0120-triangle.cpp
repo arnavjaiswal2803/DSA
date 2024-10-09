@@ -2,16 +2,18 @@ class Solution {
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
         int n = triangle.size();
-        vector<vector<int>> dp(n, vector<int>(n, -1));
+        vector<int> prev(n);
 
         for (int row = n - 1; row >= 0; row--) {
+            vector<int> curr(n);
             for (int col = 0; col <= row; col++) {
-                dp[row][col] = triangle[row][col];
+                curr[col] = triangle[row][col];
                 if (row < n - 1) 
-                    dp[row][col] += min(dp[row + 1][col], dp[row + 1][col + 1]);
+                    curr[col] += min(prev[col], prev[col + 1]);
             }
+            prev = curr;
         }
 
-        return dp[0][0];
+        return prev[0];
     }
 };
