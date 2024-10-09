@@ -2,18 +2,19 @@ class Solution {
 public:
     int minPathSum(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size();
-        vector<vector<int>> dp(m, vector<int>(n, -1));
+        vector<int> prev(n);
 
         for (int row = 0; row < m; row++) {
+            vector<int> curr(n);
             for (int col = 0; col < n; col++) {
-                if (row == 0 && col == 0) dp[row][col] = grid[row][col];
-                else if (row == 0) dp[row][col] = grid[row][col] + dp[row][col - 1];
-                else if (col == 0) dp[row][col] = grid[row][col] + dp[row - 1][col];
-                else dp[row][col] = 
-                    grid[row][col] + min(dp[row - 1][col], dp[row][col - 1]);
+                if (row == 0 && col == 0) curr[col] = grid[row][col];
+                else if (row == 0) curr[col] = grid[row][col] + curr[col - 1];
+                else if (col == 0) curr[col] = grid[row][col] + prev[col];
+                else curr[col] = grid[row][col] + min(prev[col], curr[col - 1]);
             }
+            prev = curr;
         }
 
-        return dp[m - 1][n - 1];
+        return prev[n - 1];
     }
 };
