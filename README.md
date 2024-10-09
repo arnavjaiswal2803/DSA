@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0155-min-stack](https://github.com/arnavjaiswal2803/DSA/tree/master/0155-min-stack) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/arnavjaiswal2803/DSA/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/arnavjaiswal2803/DSA/tree/master/1497-design-a-stack-with-increment-operation) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/arnavjaiswal2803/DSA/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/arnavjaiswal2803/DSA/tree/master/2800-minimum-string-length-after-removing-substrings) |
@@ -86,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [0567-permutation-in-string](https://github.com/arnavjaiswal2803/DSA/tree/master/0567-permutation-in-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/arnavjaiswal2803/DSA/tree/master/0920-uncommon-words-from-two-sentences) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/arnavjaiswal2803/DSA/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/arnavjaiswal2803/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/arnavjaiswal2803/DSA/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -184,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
+| [0957-minimum-add-to-make-parentheses-valid](https://github.com/arnavjaiswal2803/DSA/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/arnavjaiswal2803/DSA/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 ## Tree
 |  |
