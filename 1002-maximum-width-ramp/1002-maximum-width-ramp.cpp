@@ -3,17 +3,15 @@ public:
     int maxWidthRamp(vector<int>& nums) {
         int n = nums.size();
 
-        vector<int> indices(n);
-        for (int i = 0; i < n; i++) indices[i] = i;
+        vector<int>rightMax(n);
+        rightMax[n - 1] = nums[n - 1];
+        for (int i = n - 2; i >= 0; i--) rightMax[i] = max(nums[i], rightMax[i + 1]);
 
-        sort(indices.begin(), indices.end(), [&](int i, int j) {
-            return nums[i] != nums[j] ? nums[i] < nums[j] : i < j;
-        });
-
-        int minIdx = indices[0], maxRamp = 0;
-        for (int i = 1; i < n; i++) {
-            maxRamp = max(maxRamp, indices[i] - minIdx);
-            minIdx = min(minIdx, indices[i]);
+        int left = 0, right = 0, maxRamp = 0;
+        while (right < n) {
+            while (left < right && nums[left] > rightMax[right]) left++;
+            maxRamp = max(maxRamp, right - left);
+            right++;
         }
 
         return maxRamp;
