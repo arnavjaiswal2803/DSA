@@ -1,19 +1,17 @@
 class Solution {
-    void count(vector<int> &nums, int idx, int n, int bitOr, 
-        map<int, int, greater<int> > &freq) {
-            if (idx == n) {
-                freq[bitOr]++;
-                return;
-            }
+    int count(vector<int> &nums, int idx, int currOr, int maxOr, 
+        vector<vector<int>> &dp) {
+            if (idx < 0) return currOr == maxOr ? 1 : 0;
+            if (dp[idx][currOr] != -1) return dp[idx][currOr];
 
-            count(nums, idx + 1, n, bitOr, freq);
-            count(nums, idx + 1, n, bitOr | nums[idx], freq);
+            return dp[idx][currOr] = count(nums, idx - 1, currOr, maxOr, dp) + 
+                count(nums, idx - 1, currOr | nums[idx], maxOr, dp);
     }
 public:
     int countMaxOrSubsets(vector<int>& nums) {
-        int n = nums.size();
-        map<int, int, greater<int> > freq;
-        count(nums, 0, n, 0, freq);
-        return (*freq.begin()).second;
+        int n = nums.size(), maxOr = 0;
+        for (int i = 0; i < n; i++) maxOr |= nums[i];
+        vector<vector<int>> dp(n, vector<int>(maxOr + 1, -1));
+        return count(nums, n - 1, 0, maxOr, dp);
     }
 };
