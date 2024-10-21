@@ -15,7 +15,9 @@ class Solution {
             if (ch == 't') { 
                 res.result &= true;
             } else if (ch == 'f') { 
-                res.result &= false;
+                res.result = false;
+                res.index = expr.find(')', i);
+                return res;
             } else if (ch == '&') {
                 ds temp = parseAnd(expr, i + 1);
                 res.result &= temp.result;
@@ -42,7 +44,9 @@ class Solution {
 
             char ch = expr[i];
             if (ch == 't') { 
-                res.result |= true;
+                res.result = true;
+                res.index = expr.find(')', i);
+                return res;
             } else if (ch == 'f') { 
                 res.result |= false;
             } else if (ch == '&') {
