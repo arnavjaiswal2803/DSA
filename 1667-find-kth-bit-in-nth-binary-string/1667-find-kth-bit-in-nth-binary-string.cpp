@@ -1,26 +1,11 @@
 class Solution {
-    string reverseString(string str) {
-        reverse(str.begin(), str.end());
-        return str;
-    }
-
-    string invertString(string str) {
-        string res = "";
-        for (char ch : str) {
-            if (ch == '0') res += '1';
-            else res += '0';
-        }
-        return res;
-    }
-
-    string generateNthBinaryString(int n) {
-        if (n == 1) return "0";
-
-        string prevStr = generateNthBinaryString(n - 1);
-        return prevStr + "1" + reverseString(invertString(prevStr));
-    }
 public:
     char findKthBit(int n, int k) {
-        return generateNthBinaryString(n)[k - 1];
+        if (n == 1) return '0';
+
+        int prevLen = pow(2, n - 1) - 1;
+        if (k == prevLen + 1) return '1';
+        else if (k <= prevLen) return findKthBit(n - 1, k);
+        else return findKthBit(n - 1, 2 * prevLen - k + 2) == '0' ? '1' : '0';
     }
 };
