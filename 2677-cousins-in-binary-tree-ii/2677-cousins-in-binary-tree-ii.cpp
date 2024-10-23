@@ -17,33 +17,35 @@ class Solution {
 public:
     TreeNode* replaceValueInTree(TreeNode* root) {
         queue<nodeParent> q;
+        unordered_map<TreeNode*, int> parentSum;
+        parentSum[NULL] = root->val;
+        int currLevelSum = root->val;
+
         q.push({root, NULL});
         while (!q.empty()) {
-            unordered_map<TreeNode*, int> parentSum;
-            int levelSum = 0, k = q.size();
+            int nextLevelSum = 0, k = q.size();
 
             for (int i = 0; i < k; i++) {
                 nodeParent temp = q.front();
                 q.pop();
 
-                levelSum += temp.node->val;
-                parentSum[temp.parent] += temp.node->val;
+                temp.node->val = currLevelSum - parentSum[temp.parent];
 
-                q.push(temp);
-            }
-
-            for (int i = 0; i < k; i++) {
-                nodeParent temp = q.front();
-                q.pop();
-
-                temp.node->val = levelSum - parentSum[temp.parent];
-
-                if (temp.node->left) 
+                if (temp.node->left) {
+                    nextLevelSum += temp.node->left->val;
+                    parentSum[temp.node] += temp.node->left->val;
                     q.push({temp.node->left, temp.node});
-                if (temp.node->right) 
+                }
+                if (temp.node->right) {
+                    nextLevelSum += temp.node->right->val;
+                    parentSum[temp.node] += temp.node->right->val;
                     q.push({temp.node->right, temp.node});
+                }
             }
+
+            currLevelSum = nextLevelSum;
         }
+
         return root;
     }
 };
