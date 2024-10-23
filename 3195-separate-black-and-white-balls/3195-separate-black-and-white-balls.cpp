@@ -1,12 +1,12 @@
 class Solution {
 public:
     long long minimumSteps(string s) {
-        int n = s.length(), zeroesCount = 0;
+        int n = s.length(), onesCount = 0;
         long long ans = 0;
 
-        for (int i = n - 1; i >= 0; i--) {
-            if (s[i] == '0') zeroesCount++;
-            else ans += (long long) zeroesCount;
+        for (int i = 0; i < n; i++) {
+            if (s[i] == '1') onesCount++;
+            else ans += (long long) onesCount;
         }
         
         return ans;
