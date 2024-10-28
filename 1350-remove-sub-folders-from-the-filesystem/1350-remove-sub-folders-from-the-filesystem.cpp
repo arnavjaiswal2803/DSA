@@ -1,36 +1,65 @@
 class Solution {
-public:
-    vector<string> removeSubfolders(vector<string>& folder) {
-        // Create a set to store all folder paths for fast lookup
-        unordered_set<string> folderSet(folder.begin(), folder.end());
-        vector<string> result;
-
-        // Iterate through each folder to check if it's a sub-folder
-        for (string& f : folder) {
-            bool isSubFolder = false;
-            string prefix = f;
-
-            // Check all prefixes of the current folder path
-            while (!prefix.empty()) {
-                size_t pos = prefix.find_last_of('/');
-                if (pos == string::npos) break;
-
-                // Reduce the prefix to its parent folder
-                prefix = prefix.substr(0, pos);
-
-                // If the parent folder exists in the set, mark as sub-folder
-                if (folderSet.count(prefix)) {
-                    isSubFolder = true;
-                    break;
-                }
-            }
-
-            // If not a sub-folder, add it to the result
-            if (!isSubFolder) {
-                result.push_back(f);
-            }
+    class TrieNode {
+        unordered_map<string, TrieNode*> links;
+        bool flag = false;
+    public:
+        void put(string &s, TrieNode* node) {
+            links[s] = node;
         }
 
-        return result;
+        TrieNode* get(string &s) {
+            return links[s];
+        }
+
+        void setEnd() {
+            flag = true;
+        }
+
+        bool isEnd() {
+            return flag == true;
+        }
+    };
+
+    class Trie {
+        TrieNode* root;
+    public: 
+        Trie() {
+            root = new TrieNode();
+        }
+
+        bool canInsert(string &word) {
+            TrieNode* node = root;
+            int n = word.length();
+
+            for (int i = 1; i < n; i++) {
+                string folderName = "";
+                while (i < n && word[i] != '/') folderName += word[i++];
+
+                if (node->get(folderName) == NULL) {
+                    node->put(folderName, new TrieNode());
+                } else if (node->get(folderName)->isEnd()) return false;
+                
+                node = node->get(folderName);
+            }
+            node->setEnd();
+
+            return true;
+        }
+    };
+public:
+    vector<string> removeSubfolders(vector<string>& folder) {
+        sort (folder.begin(), folder.end(), [&](string &s1, string &s2) {
+            return s1.length() < s2.length();
+        });
+
+        Trie *trie = new Trie();
+        vector<string> ans;
+        int n = folder.size();
+
+        for (int i = 0; i < n; i++) {
+            if (trie->canInsert(folder[i])) ans.push_back(folder[i]);
+        }
+
+        return ans;
     }
 };
