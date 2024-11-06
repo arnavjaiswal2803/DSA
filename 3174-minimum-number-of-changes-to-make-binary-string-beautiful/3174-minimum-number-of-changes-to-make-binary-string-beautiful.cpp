@@ -1,35 +1,16 @@
 class Solution {
 public:
     int minChanges(string s) {
-        // Initialize with first character of string
-        char currentChar = s[0];
+        int zeroCount = 0, oneCount = 0, changes = 0, n = s.length();
+        for (int i = 0; i < n; i++) {
+            s[i] == '0' ? zeroCount++ : oneCount++;
 
-        int consecutiveCount = 0;
-        int minChangesRequired = 0;
-
-        // Iterate through each character in the string
-        for (int i = 0; i < s.length(); i++) {
-            // If current character matches the previous sequence
-            if (s[i] == currentChar) {
-                consecutiveCount++;
-                continue;
+            if (i & 1) {
+                if (zeroCount & 1) changes++;
+                zeroCount = 0;
+                oneCount = 0;
             }
-
-            // If we have even count of characters, start new sequence
-            if (consecutiveCount % 2 == 0) {
-                consecutiveCount = 1;
-            }
-            // If odd count, we need to change current character
-            // to match previous sequence
-            else {
-                consecutiveCount = 0;
-                minChangesRequired++;
-            }
-
-            // Update current character for next iteration
-            currentChar = s[i];
         }
-
-        return minChangesRequired;
+        return changes;
     }
 };
