@@ -2,14 +2,14 @@ class Solution {
     bool getBit(int num, int pos) { return ((num >> pos) & 1) != 0; }
 public:
     int largestCombination(vector<int>& candidates) {
-        vector<int> hash(32, 0);
-        int maxFreq = 0, n = candidates.size();
+        int n = candidates.size(), maxCount = 0;
 
-        for (int candidate : candidates) {
-            for (int j = 0; j < 32; j++) 
-                if (getBit(candidate, j)) maxFreq = max(maxFreq, ++hash[j]);
+        for (int i = 0; i < 24; i++) {
+            int count = 0;
+            for (int candidate : candidates) if (getBit(candidate, i)) count++;
+            maxCount = max(maxCount, count);
         }
 
-        return maxFreq;
+        return maxCount;
     }
 };
