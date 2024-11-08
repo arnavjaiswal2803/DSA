@@ -8,12 +8,7 @@ public:
 
         for (int i = 0; i < n; i++) {
             xorr ^= nums[i];
-            int k = maxK;
-
-            for (int pos = maximumBit - 1; pos >= 0; pos--) 
-                k = getBit(xorr, pos) ? clearBit(k, pos) : k;
-
-            ans[n - 1 - i] = k;
+            ans[n - 1 - i] = maxK ^ xorr;
         }
 
         return ans;
