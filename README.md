@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3291-find-if-array-can-be-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/3291-find-if-array-can-be-sorted) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/arnavjaiswal2803/DSA/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/arnavjaiswal2803/DSA/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/arnavjaiswal2803/DSA/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [3291-find-if-array-can-be-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/3291-find-if-array-can-be-sorted) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/arnavjaiswal2803/DSA/tree/master/3394-minimum-array-end) |
 ## Counting
 |  |
@@ -172,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/arnavjaiswal2803/DSA/tree/master/1046-max-consecutive-ones-iii) |
 | [1370-count-number-of-nice-subarrays](https://github.com/arnavjaiswal2803/DSA/tree/master/1370-count-number-of-nice-subarrays) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/arnavjaiswal2803/DSA/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
