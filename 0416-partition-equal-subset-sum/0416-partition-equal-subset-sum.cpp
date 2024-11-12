@@ -2,7 +2,7 @@ class Solution {
     bool canPartition(vector<int> &nums, int idx, int sum1, int sum2, 
         vector<vector<int>> &dp) {
             if (sum1 == sum2) return true;
-            if (idx < 0) return false;
+            if (idx == 0) return sum1 + nums[idx] == sum2 - nums[idx];
             if (dp[idx][sum1] != -1) return dp[idx][sum1];
 
             return dp[idx][sum1] = canPartition(nums, idx - 1, sum1, sum2, dp) || 
