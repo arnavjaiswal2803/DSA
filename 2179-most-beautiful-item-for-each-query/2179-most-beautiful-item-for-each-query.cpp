@@ -15,21 +15,17 @@ class Solution {
 public:
     vector<int> maximumBeauty(vector<vector<int>>& items, vector<int>& queries) {
         int n = items.size(), m = queries.size();
+        vector<vector<int>> maxBeauty(items);
 
-        sort(items.begin(), items.end(), [&](vector<int> &a, vector<int> &b) {
+        sort(maxBeauty.begin(), maxBeauty.end(), [&](vector<int> &a, vector<int> &b) {
             if (a[0] < b[0]) return true;
             else if (a[0] > b[0]) return false;
             else return a[1] > b[1];
         });
 
-        vector<vector<int>> maxBeauty = { items[0] };
-        for (int i = 1; i < n; i++) {
-            if (items[i][0] != items[i - 1][0]) {
-                vector<int> temp = { items[i][0], 
-                    max(maxBeauty.back()[1], items[i][1]) };
-                maxBeauty.push_back(temp);
-            }
-        }
+        
+        for (int i = 1; i < n; i++) 
+            maxBeauty[i][1] = max(maxBeauty[i][1], maxBeauty[i - 1][1]);
 
         vector<int> ans(m);
         for (int i = 0; i < m; i++) ans[i] = binarySearch(maxBeauty, queries[i]);
