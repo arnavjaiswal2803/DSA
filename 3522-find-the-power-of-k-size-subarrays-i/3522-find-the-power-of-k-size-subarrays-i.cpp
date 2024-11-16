@@ -1,15 +1,18 @@
 class Solution {
 public:
     vector<int> resultsArray(vector<int>& nums, int k) {
-        int n = nums.size();
-        deque<int> dq;
+         if (k == 1) {
+            return nums;
+        }
+
+        int n = nums.size(), counter = 1;
         vector<int> ans(n - k + 1);
 
-        for (int i = 0; i < n; i++) {
-            if (!dq.empty() && nums[i] != nums[dq.back()] + 1) dq.clear();
-            dq.push_back(i);
-            if (i >= k - 1) ans [i - k + 1] = dq.size() == k ? nums[dq.back()] : -1;
-            if (dq.size() == k) dq.pop_front();
+        for (int i = 1; i < n; i++) {
+            if (nums[i] == nums[i - 1] + 1) counter++;
+            else counter = 1;
+
+            if (i >= k - 1) ans[i - k + 1] = counter >= k ? nums[i] : -1;
         }
 
         return ans;
