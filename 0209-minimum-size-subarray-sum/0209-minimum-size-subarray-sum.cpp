@@ -1,31 +1,23 @@
 class Solution {
-    bool isPossible(vector<int> &nums, int n, int windowSize, int target) {
-        int right = 0;
-        long long sum = 0;
-
-        while (right < windowSize) sum += (long long)nums[right++];
-        if (sum >= target) return true;
-
-        while (right < n) {
-            sum += (nums[right] - nums[right - windowSize]);
-            if (sum >= target) return true;
-            right++;
-        }
-
-        return false;
-    }
 public:
-    int minSubArrayLen(int target, vector<int>& nums) {
-        int n = nums.size();
+    int minSubArrayLen(int k, vector<int>& nums) {
+        int n = nums.size(), len = 0, minLen = INT_MAX;
+        long long sum = 0;
+        vector<long long> prefixSum(n);
 
-        int low = 1, high = n;
-        while (low <= high) {
-            int mid = low + ((high - low) >> 1);
-
-            if (isPossible(nums, n, mid, target)) high = mid - 1;
-            else low = mid + 1;
+        for (int i = 0; i < n; i++) {
+            prefixSum[i] = (long long)nums[i];
+            if (i > 0) prefixSum[i] += prefixSum[i - 1];
         }
 
-        return low <= n ? low : 0;
+        int left = 0;
+        for (int right = 0; right < n; right++) {
+            while (prefixSum[right] - prefixSum[left] >= (long long)k) {
+                left++; 
+            }
+            if (prefixSum[right] >= k) minLen = min(minLen, right - left + 1);
+        }
+
+        return minLen != INT_MAX ? minLen : 0;
     }
 };
