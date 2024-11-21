@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/arnavjaiswal2803/DSA/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/arnavjaiswal2803/DSA/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/arnavjaiswal2803/DSA/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/arnavjaiswal2803/DSA/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/2494-sum-of-prefix-scores-of-strings) |
@@ -439,6 +440,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1667-find-kth-bit-in-nth-binary-string) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/arnavjaiswal2803/DSA/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Matrix
 |  |
@@ -447,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
 | [0967-minimum-falling-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0967-minimum-falling-path-sum) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/arnavjaiswal2803/DSA/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [2343-count-unguarded-cells-in-the-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Backtracking
 |  |
