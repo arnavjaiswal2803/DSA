@@ -1,42 +1,21 @@
 class Solution {
+typedef pair<long long, int> pii;
 public:
     int shortestSubarray(vector<int>& nums, int k) {
-        int n = nums.size();
+        int n = nums.size(), minLen = INT_MAX;
+        long long sum = 0;
+        priority_queue<pii, vector<pii>, greater<>> prefixSumHeap;
 
-        // Initialize result to the maximum possible integer value
-        int shortestSubarrayLength = INT_MAX;
-
-        long long cumulativeSum = 0;
-
-        // Min-heap to store cumulative sum and its corresponding index
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<>>
-            prefixSumHeap;
-
-        // Iterate through the array
         for (int i = 0; i < n; i++) {
-            // Update cumulative sum
-            cumulativeSum += nums[i];
-
-            // If cumulative sum is already >= k, update shortest length
-            if (cumulativeSum >= k) {
-                shortestSubarrayLength = min(shortestSubarrayLength, i + 1);
-            }
-
-            // Remove subarrays from heap that can form a valid subarray
-            while (!prefixSumHeap.empty() &&
-                   cumulativeSum - prefixSumHeap.top().first >= k) {
-                // Update shortest subarray length
-                shortestSubarrayLength =
-                    min(shortestSubarrayLength, i - prefixSumHeap.top().second);
+            sum += nums[i];
+            if (sum >= k) minLen = min(minLen, i + 1);
+            while (!prefixSumHeap.empty() && sum - prefixSumHeap.top().first >= k) {
+                minLen = min(minLen, i - prefixSumHeap.top().second);
                 prefixSumHeap.pop();
             }
-
-            // Add current cumulative sum and index to heap
-            prefixSumHeap.emplace(cumulativeSum, i);
+            prefixSumHeap.push({sum, i});
         }
 
-        // Return -1 if no valid subarray found
-        return shortestSubarrayLength == INT_MAX ? -1 : shortestSubarrayLength;
+        return minLen == INT_MAX ? -1 : minLen;
     }
 };
