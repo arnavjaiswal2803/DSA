@@ -17,9 +17,10 @@ public:
             s.pop();
             t.pop();
 
-            if (startCh != targetCh) return false;
-            if (startCh == 'L' && startPos < targetPos) return false;
-            if (startCh == 'R' && startPos > targetPos) return false;
+            if (startCh != targetCh || 
+                startCh == 'L' && startPos < targetPos || 
+                startCh == 'R' && startPos > targetPos) 
+                return false;
         }
 
         return true;
