@@ -3,9 +3,8 @@ public:
     int maxCount(vector<int>& banned, int n, int maxSum) {
         int count = 0;
         long long sum = 0;
-        unordered_set<int> bannedNumbers;
-        
-        for (int &i : banned) bannedNumbers.insert(i);
+        unordered_set<int> bannedNumbers(banned.begin(), banned.end());
+    
         for (int i = 1; i <= n; i++) {
             if (bannedNumbers.count(i) == 1) continue;
             if (sum + (long long)i > (long long)maxSum) break;
