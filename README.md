@@ -62,6 +62,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/arnavjaiswal2803/DSA/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1694-make-sum-divisible-by-p](https://github.com/arnavjaiswal2803/DSA/tree/master/1694-make-sum-divisible-by-p) |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [1755-defuse-the-bomb](https://github.com/arnavjaiswal2803/DSA/tree/master/1755-defuse-the-bomb) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -220,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/arnavjaiswal2803/DSA/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1304-longest-happy-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1304-longest-happy-string) |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/arnavjaiswal2803/DSA/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/arnavjaiswal2803/DSA/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/arnavjaiswal2803/DSA/tree/master/2616-maximal-score-after-applying-k-operations) |
@@ -238,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1046-max-consecutive-ones-iii](https://github.com/arnavjaiswal2803/DSA/tree/master/1046-max-consecutive-ones-iii) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/arnavjaiswal2803/DSA/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
@@ -348,6 +351,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0543-diameter-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0543-diameter-of-binary-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/arnavjaiswal2803/DSA/tree/master/0988-flip-equivalent-binary-trees) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/arnavjaiswal2803/DSA/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/arnavjaiswal2803/DSA/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
@@ -356,6 +360,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0100-same-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0104-maximum-depth-of-binary-tree) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/arnavjaiswal2803/DSA/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -476,6 +481,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/arnavjaiswal2803/DSA/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/arnavjaiswal2803/DSA/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 ## Backtracking
@@ -491,4 +497,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2716-prime-subtraction-operation](https://github.com/arnavjaiswal2803/DSA/tree/master/2716-prime-subtraction-operation) |
+## Union Find
+|  |
+| ------- |
+| [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 <!---LeetCode Topics End-->
