@@ -70,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1923-sentence-similarity-iii](https://github.com/arnavjaiswal2803/DSA/tree/master/1923-sentence-similarity-iii) |
 | [1940-maximum-xor-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/1940-maximum-xor-for-each-query) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/arnavjaiswal2803/DSA/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/arnavjaiswal2803/DSA/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/arnavjaiswal2803/DSA/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
@@ -224,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1304-longest-happy-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1304-longest-happy-string) |
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/arnavjaiswal2803/DSA/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
+| [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/arnavjaiswal2803/DSA/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2616-maximal-score-after-applying-k-operations](https://github.com/arnavjaiswal2803/DSA/tree/master/2616-maximal-score-after-applying-k-operations) |
 ## Monotonic Queue
@@ -244,6 +246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/arnavjaiswal2803/DSA/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
+| [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/arnavjaiswal2803/DSA/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/arnavjaiswal2803/DSA/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
@@ -284,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1256-rank-transform-of-an-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1256-rank-transform-of-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
+| [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/arnavjaiswal2803/DSA/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2554-minimum-total-distance-traveled](https://github.com/arnavjaiswal2803/DSA/tree/master/2554-minimum-total-distance-traveled) |
@@ -309,6 +313,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/arnavjaiswal2803/DSA/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/arnavjaiswal2803/DSA/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2554-minimum-total-distance-traveled](https://github.com/arnavjaiswal2803/DSA/tree/master/2554-minimum-total-distance-traveled) |
 | [2755-extra-characters-in-a-string](https://github.com/arnavjaiswal2803/DSA/tree/master/2755-extra-characters-in-a-string) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2794-maximum-number-of-moves-in-a-grid) |
