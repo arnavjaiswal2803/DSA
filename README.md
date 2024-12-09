@@ -94,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3291-find-if-array-can-be-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/3291-find-if-array-can-be-sorted) |
 | [3329-find-the-length-of-the-longest-common-prefix](https://github.com/arnavjaiswal2803/DSA/tree/master/3329-find-the-length-of-the-longest-common-prefix) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
+| [3427-special-array-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3427-special-array-ii) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/arnavjaiswal2803/DSA/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
 ## Hash Table
 |  |
@@ -253,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2699-count-the-number-of-fair-pairs](https://github.com/arnavjaiswal2803/DSA/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2716-prime-subtraction-operation](https://github.com/arnavjaiswal2803/DSA/tree/master/2716-prime-subtraction-operation) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/arnavjaiswal2803/DSA/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [3427-special-array-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3427-special-array-ii) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -266,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/arnavjaiswal2803/DSA/tree/master/1694-make-sum-divisible-by-p) |
 | [1940-maximum-xor-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/1940-maximum-xor-for-each-query) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/arnavjaiswal2803/DSA/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [3427-special-array-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3427-special-array-ii) |
 ## Math
 |  |
 | ------- |
