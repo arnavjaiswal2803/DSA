@@ -38,23 +38,15 @@ public:
         for (int i = 0; i < n; i++) {
             int row = stones[i][0], col = stones[i][1];
 
-            if (rowMap.find(row) == rowMap.end()) {
-                rowMap[row] = i;
-            } else {
-                ds.createUnion(rowMap[row], i);
-            }
+            if (rowMap.find(row) == rowMap.end()) rowMap[row] = i; 
+            else ds.createUnion(rowMap[row], i);
 
-            if (colMap.find(col) == colMap.end()) {
-                colMap[col] = i;
-            } else {
-                ds.createUnion(colMap[col], i);
-            }
+            if (colMap.find(col) == colMap.end()) colMap[col] = i;
+            else ds.createUnion(colMap[col], i);
         }
 
         int cannotRemove = 0;
-        for (int i = 0; i < n; i++) {
-            if (ds.findParent(i) == i) cannotRemove++;
-        }
+        for (int i = 0; i < n; i++) if (ds.findParent(i) == i) cannotRemove++;
 
         return n - cannotRemove;
     }
