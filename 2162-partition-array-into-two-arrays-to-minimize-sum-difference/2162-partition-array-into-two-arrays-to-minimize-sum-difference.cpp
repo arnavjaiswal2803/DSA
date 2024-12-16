@@ -1,47 +1,46 @@
 class Solution {
+    int getBit(int num, int pos) { return (num & (1 << pos)) != 0; }
 public:
     int minimumDifference(vector<int>& nums) {
-        int n = nums.size(), res = 0, sum = 0;
-        sum = accumulate(nums.begin(), nums.end(),0);
-        
-        int N = n/2;
-        vector<vector<int>> left(N+1), right(N+1);
-        
-		//storing all possible sum in left and right part
-        for(int mask = 0; mask<(1<<N); ++mask){
-            int sz = 0, l = 0, r = 0;
-            for(int i=0; i<N; ++i){
-                if(mask&(1<<i)){
-                    sz++;
-                    l += nums[i];
-                    r += nums[i+N];
+        int N = nums.size();
+        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+
+        int n = N / 2;
+        vector<vector<int>> left(n + 1), right(n + 1);
+
+        for (int mask = 0; mask < (1 << n); mask++) {
+            int count = 0, leftSum = 0, rightSum = 0;
+
+            for (int idx = 0; idx < n; idx++) {
+                if (getBit(mask, idx)) {
+                    count++;
+                    leftSum += nums[idx];
+                    rightSum += nums[idx + n];
                 }
             }
-            left[sz].push_back(l);
-            right[sz].push_back(r);
+
+            left[count].push_back(leftSum);
+            right[count].push_back(rightSum);
         }
 
-        for(int sz=0; sz<=N; ++sz){
-            sort(right[sz].begin(), right[sz].end());
-        }
+        for (int count = 0; count <= n; count++) 
+            sort(right[count].begin(), right[count].end());
 
-        res = min(abs(sum-2*left[N][0]), abs(sum-2*right[N][0]));
+        int ans = min(abs(totalSum - 2*left[n][0]), abs(totalSum - 2*right[n][0]));
+        for (int leftCnt = 1; leftCnt < n; leftCnt++) {
+            for (int &a : left[leftCnt]) {
+                int rightCnt = n - leftCnt;
+                vector<int> &vec = right[rightCnt];
+                int b = ((totalSum - 2 * a) / 2);
 
-		//iterating over left part
-        for(int sz=1; sz<N; ++sz){
-            for(auto &a : left[sz]){
-                int b = (sum - 2*a)/2, rsz = N-sz;
-                auto &v = right[rsz];
-                auto itr = lower_bound(v.begin(), v.end(),b); //binary search over right part
-                
-                if(itr!=v.end()) res = min(res, abs(sum-2*(a+(*itr))));
-                if(itr!= v.begin()){
-                    auto it = itr; --it;
-                    res = min(res, abs(sum-2*(a+(*it))));
-                }                
+                auto it = lower_bound(vec.begin(), vec.end(), b);
+                if (it != vec.end()) {
+                    int sum1 = a + *it;
+                    ans = min(ans, abs(totalSum - 2 * sum1));
+                }
             }
         }
-        return res;
-        
+
+        return ans;
     }
 };
