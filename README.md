@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
 | [0416-partition-equal-subset-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0416-partition-equal-subset-sum) |
+| [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
@@ -319,6 +320,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
+| [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [1256-rank-transform-of-an-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1256-rank-transform-of-an-array) |
@@ -362,6 +364,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
+| [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0670-maximum-swap](https://github.com/arnavjaiswal2803/DSA/tree/master/0670-maximum-swap) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/arnavjaiswal2803/DSA/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -503,6 +506,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0567-permutation-in-string](https://github.com/arnavjaiswal2803/DSA/tree/master/0567-permutation-in-string) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/arnavjaiswal2803/DSA/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
