@@ -1,27 +1,11 @@
 class Solution {
 public:
     int maxChunksToSorted(vector<int>& arr) {
-        int n = arr.size(), chunks = 0;
-
-        for (int startIdx = 0; startIdx < n; startIdx++) {
-            vector<bool> present(n, false);
-            int absentCount = 0;
-            
-            for (int endIdx = startIdx; endIdx < n; endIdx++) {
-                if (!present[endIdx]) absentCount++;
-                if (arr[endIdx] >= startIdx && arr[endIdx] <= endIdx &&
-                    !present[arr[endIdx]])
-                        absentCount--;
-                present[arr[endIdx]] = true;
-
-                if (absentCount == 0) {
-                    chunks++;
-                    startIdx = endIdx;
-                    break;
-                }
-            }
+        int n = arr.size(), chunks = 0, maxi = -1;
+        for (int i = 0; i < n; i++) {
+            maxi = max(maxi, arr[i]);
+            if (maxi == i) chunks++;
         }
-
         return chunks;
     }
 };
