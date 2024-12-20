@@ -10,37 +10,18 @@
  * };
  */
 class Solution {
-    bool isOddLevel(int level) { return level & 1; };
+    void dfs(TreeNode* leftChild, TreeNode* rightChild, bool shouldSwap) {
+        if (leftChild == NULL || rightChild == NULL) return;
+
+        if (shouldSwap) swap(leftChild->val, rightChild->val);
+
+        dfs(leftChild->left, rightChild->right, !shouldSwap);
+        dfs(leftChild->right, rightChild->left, !shouldSwap);
+    }
 public:
     TreeNode* reverseOddLevels(TreeNode* root) {
-        queue<TreeNode*> q;
-        vector<int> values;
-        int level = 0;
-
-        q.push(root);
-        while (!q.empty()) {
-            int qSize = q.size();
-            while (qSize--) {
-                TreeNode* temp = q.front();
-                q.pop();
-
-                if (isOddLevel(level)) {
-                    temp->val = values.back();
-                    values.pop_back();
-                }
-
-                if (temp->left != NULL) {
-                    if (!isOddLevel(level)) values.push_back(temp->left->val);
-                    q.push(temp->left);
-                }
-                if (temp->right != NULL) {
-                    if (!isOddLevel(level)) values.push_back(temp->right->val);
-                    q.push(temp->right);
-                }
-            } 
-            level++;
-        }
-
+        if (!root) return root;
+        dfs(root->left, root->right, true);
         return root;
     }
 };
