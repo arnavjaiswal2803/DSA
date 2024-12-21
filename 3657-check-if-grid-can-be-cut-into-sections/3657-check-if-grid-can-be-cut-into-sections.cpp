@@ -38,7 +38,6 @@ class Solution {
             int coordinate2 = axis == X_AXIS ? 2 : 3;
             coordinates.push_back({rectangle[coordinate1], rectangle[coordinate2]});
         }
-        sort(coordinates.begin(), coordinates.end());
         coordinates = mergeIntervals(coordinates);
         return coordinates.size() >= 3;
     }
