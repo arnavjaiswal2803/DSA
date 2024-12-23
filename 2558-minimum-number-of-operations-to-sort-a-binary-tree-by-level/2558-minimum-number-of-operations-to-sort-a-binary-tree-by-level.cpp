@@ -10,19 +10,20 @@
  * };
  */
 class Solution {
-    int getMinSwaps(vector<int>& original) {
+    int getMinSwaps(vector<int>& original, int n) {
+        int swaps = 0;
         vector<int> target(original);
+
         sort(target.begin(), target.end());
 
-        int swaps = 0, n = target.size();
-        map<int, int> pos;
+        unordered_map<int, int> pos;
         for (int i = 0; i < n; i++) pos[original[i]] = i;
 
         for (int i = 0; i < n; ++i) {
             if (original[i] != target[i]) {
                 swaps++;
+
                 int targetIdx = pos[target[i]];
-                pos[target[i]] = i;
                 pos[original[i]] = targetIdx;
                 swap(original[i], original[targetIdx]);
             }
@@ -37,18 +38,19 @@ public:
 
         q.push(root);
         while (!q.empty()) {
-            int qSize = q.size(), ptr = 0;
+            int qSize = q.size();
             vector<int> original(qSize);
-            while (qSize--) {
+
+            for (int i = 0; i < qSize; i++) {
                 TreeNode* temp = q.front();
                 q.pop();
 
-                original[ptr++] = temp->val;
+                original[i] = temp->val;
 
                 if (temp->left) q.push(temp->left);
                 if (temp->right) q.push(temp->right);
             }
-            totalSwaps += getMinSwaps(original);
+            totalSwaps += getMinSwaps(original, qSize);
         }
 
         return totalSwaps;
