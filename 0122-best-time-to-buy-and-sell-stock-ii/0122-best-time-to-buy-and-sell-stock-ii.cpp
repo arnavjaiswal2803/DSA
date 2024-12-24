@@ -1,6 +1,5 @@
 class Solution {
     int maxProfit(vector<int>& prices, int n, int idx, vector<int>& dp) {
-        if (idx == n) return 0;
         if (dp[idx] != -1) return dp[idx];
 
         int profit = 0;
