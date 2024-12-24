@@ -1,18 +1,22 @@
 class Solution {
-    int lis(vector<int>& nums, int n, int idx, int prevIdx, vector<vector<int>>& dp) {
-        if (idx == n) return 0;
-        if (dp[idx][prevIdx + 1] != -1) return dp[idx][prevIdx + 1];
-
-        int len = lis(nums, n, idx + 1, prevIdx, dp);
-        if (prevIdx == -1 || nums[idx] > nums[prevIdx]) 
-            len = max(len, 1 + lis(nums, n, idx + 1, idx, dp));
-
-        return dp[idx][prevIdx + 1] = len;
-    }
 public:
     int lengthOfLIS(vector<int>& nums) {
         int n = nums.size();
-        vector<vector<int>> dp(n, vector<int>(n + 1, -1));
-        return lis(nums, n, 0, -1, dp);
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1));
+
+        for (int idx = n; idx >= 0; --idx) {
+            for (int prevIdx = idx - 1; prevIdx >= -1; --prevIdx) {
+                if (idx == n) dp[idx][prevIdx + 1] = 0;
+                else {
+                    int exclude = dp[idx + 1][prevIdx + 1], include = 0;
+                    if (prevIdx == -1 || nums[idx] > nums[prevIdx]) 
+                        include = 1 + dp[idx + 1][idx + 1];
+
+                    dp[idx][prevIdx + 1] = max(include, exclude);
+                }
+            }
+        }
+        
+        return dp[0][0];
     }
 };
