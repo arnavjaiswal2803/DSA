@@ -10,30 +10,22 @@
  * };
  */
 class Solution {
+    void preorder(TreeNode* node, vector<int>& maxRowValues, int row) {
+        if (!node) return;
+
+        if (maxRowValues.size() > row) 
+            maxRowValues[row] = max(maxRowValues[row], node->val);
+        else maxRowValues.push_back(node->val);
+
+        preorder(node->left, maxRowValues, row + 1);
+        preorder(node->right, maxRowValues, row + 1);
+    }
 public:
     vector<int> largestValues(TreeNode* root) {
         if (!root) return {};
-        
-        queue<TreeNode*> q;
+
         vector<int> maxRowValues;
-
-        q.push(root);
-        while (!q.empty()) {
-            int qSize = q.size(), currRowMaxVal = INT_MIN;
-            
-            while (qSize--) {
-                TreeNode* node = q.front();
-                q.pop();
-
-                currRowMaxVal = max(currRowMaxVal, node->val);
-
-                if (node->left) q.push(node->left);
-                if (node->right) q.push(node->right);
-            }
-
-            maxRowValues.push_back(currRowMaxVal);
-        }
-        
-        return maxRowValues;
+        preorder(root, maxRowValues, 0);
+        return maxRowValues;        
     }
 };
