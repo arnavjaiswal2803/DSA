@@ -1,21 +1,24 @@
 class Solution {
-    int ways(vector<int>& nums, int target, int idx, 
-        map<pair<int, int>, int>& dp) {
+    int ways(vector<int>& nums, int idx, int currSum, int target, int totalSum,  
+        vector<vector<int>>& dp) {
             if (idx == 0) {
-                if (target + nums[idx] == 0 && target - nums[idx] == 0) return 2;
-                if (target + nums[idx] == 0 || target - nums[idx] == 0) return 1;
+                if (currSum + nums[idx] == target && currSum - nums[idx] == target) 
+                    return 2;
+                if (currSum + nums[idx] == target || currSum - nums[idx] == target) 
+                    return 1;
                 return 0;
-            };
-            if (dp.find({idx, target}) != dp.end()) return dp[{idx, target}];
+            }
+            if (dp[idx][currSum + totalSum] != INT_MIN) 
+                return dp[idx][currSum + totalSum];
 
-            int add = ways(nums, target - nums[idx], idx - 1, dp);
-            int sub = ways(nums, target + nums[idx], idx - 1, dp);
-            return dp[{idx, target}] = add + sub;
+            int add = ways(nums, idx - 1, currSum + nums[idx], target, totalSum, dp);
+            int sub = ways(nums, idx - 1, currSum - nums[idx], target, totalSum, dp);
+            return dp[idx][currSum + totalSum] = add + sub;
     }
 public:
     int findTargetSumWays(vector<int>& nums, int target) {
-        int n = nums.size();
-        map<pair<int, int>, int> dp;
-        return ways(nums, target, n - 1, dp);
+        int n = nums.size(), totalSum = accumulate(nums.begin(), nums.end(), 0);
+        vector<vector<int>> dp(n, vector<int>(2 * totalSum + 1, INT_MIN));
+        return ways(nums, n - 1, 0, target, totalSum, dp);
     }
 };
