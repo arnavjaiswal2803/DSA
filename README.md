@@ -73,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1497-design-a-stack-with-increment-operation](https://github.com/arnavjaiswal2803/DSA/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/arnavjaiswal2803/DSA/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/arnavjaiswal2803/DSA/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/arnavjaiswal2803/DSA/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1694-make-sum-divisible-by-p](https://github.com/arnavjaiswal2803/DSA/tree/master/1694-make-sum-divisible-by-p) |
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
@@ -351,6 +352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0780-max-chunks-to-make-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/0780-max-chunks-to-make-sorted) |
 | [1256-rank-transform-of-an-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1256-rank-transform-of-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/arnavjaiswal2803/DSA/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/arnavjaiswal2803/DSA/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
@@ -387,6 +389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/arnavjaiswal2803/DSA/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/arnavjaiswal2803/DSA/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/arnavjaiswal2803/DSA/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
+| [1669-minimum-cost-to-cut-a-stick](https://github.com/arnavjaiswal2803/DSA/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
