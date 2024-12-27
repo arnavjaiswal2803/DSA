@@ -1,21 +1,26 @@
 class Solution {
-    int minCost(vector<int>& cuts, int cutsSize, int i, int j,
-                map<pair<int, int>, int>& dp) {
-        if (dp.find({i, j}) !=  dp.end()) return dp[{i, j}];
+    int minCost(vector<int>& cuts, int i, int j, vector<vector<int>>& dp) {
+        if (i > j) return 0;
+        if (dp[i][j] !=  -1) return dp[i][j];
 
         int minn = 1e9;
-        for (int k = 0; k < cutsSize; k++) {
-            if (cuts[k] <= i || cuts[k] >= j) continue;
-            int cost =  j - i + minCost(cuts, cutsSize, i, cuts[k], dp) +
-                                 minCost(cuts, cutsSize, cuts[k], j, dp);
+        for (int k = i; k <= j; k++) {
+            int cost =  cuts[j + 1] - cuts[i - 1] + minCost(cuts, i, k - 1, dp) +
+                minCost(cuts, k + 1, j, dp);
             minn = min(minn, cost);
         }
-        return dp[{i, j}] = minn != 1e9 ? minn : 0;
+        return dp[i][j] = minn;
     }
 
 public:
     int minCost(int n, vector<int>& cuts) {
-        map<pair<int, int>, int> dp;
-        return minCost(cuts, cuts.size(), 0, n, dp);
+        sort(cuts.begin(), cuts.end());
+        cuts.insert(cuts.begin(), 0);
+        cuts.push_back(n);
+
+        int cutsSize = cuts.size();
+        vector<vector<int>> dp(cutsSize, vector<int>(cutsSize, -1));
+
+        return minCost(cuts, 1, cutsSize - 2, dp);
     }
 };
