@@ -57,6 +57,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
+| [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/arnavjaiswal2803/DSA/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0729-my-calendar-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0731-my-calendar-ii) |
 | [0780-max-chunks-to-make-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/0780-max-chunks-to-make-sorted) |
@@ -394,6 +395,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0416-partition-equal-subset-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0516-longest-palindromic-subsequence) |
+| [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/arnavjaiswal2803/DSA/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0967-minimum-falling-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0967-minimum-falling-path-sum) |
 | [1063-best-sightseeing-pair](https://github.com/arnavjaiswal2803/DSA/tree/master/1063-best-sightseeing-pair) |
 | [1250-longest-common-subsequence](https://github.com/arnavjaiswal2803/DSA/tree/master/1250-longest-common-subsequence) |
