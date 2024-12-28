@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/arnavjaiswal2803/DSA/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0155-min-stack](https://github.com/arnavjaiswal2803/DSA/tree/master/0155-min-stack) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
@@ -38,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
 | [0084-largest-rectangle-in-histogram](https://github.com/arnavjaiswal2803/DSA/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0120-triangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/arnavjaiswal2803/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -161,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0084-largest-rectangle-in-histogram](https://github.com/arnavjaiswal2803/DSA/tree/master/0084-largest-rectangle-in-histogram) |
+| [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
 | [0780-max-chunks-to-make-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/0780-max-chunks-to-make-sorted) |
@@ -378,6 +381,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0062-unique-paths](https://github.com/arnavjaiswal2803/DSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
+| [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0120-triangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/arnavjaiswal2803/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -605,6 +609,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
+| [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0967-minimum-falling-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0967-minimum-falling-path-sum) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/arnavjaiswal2803/DSA/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
