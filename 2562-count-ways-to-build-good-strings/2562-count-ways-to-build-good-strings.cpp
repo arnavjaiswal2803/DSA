@@ -2,20 +2,31 @@ class Solution {
     const int MOD = 1e9 + 7;
 
     int count(int low, int high, int zero, int one, int len, vector<int>& dp) {
-        if (len > high) return 0;
         if (dp[len] != -1) return dp[len];
         if (len >= low) {
-            return dp[len] = (
-                1 + 
-                (count(low, high, zero, one, len + zero, dp) % MOD) +
-                (count(low, high, zero, one, len + one, dp) % MOD)
-            ) % MOD;
+            int cnt = 1;
+            if (len + zero <= high) 
+                cnt = (cnt + 
+                    (count(low, high, zero, one, len + zero, dp) % MOD)
+                ) % MOD;
+            if (len + one <= high) 
+                cnt = (cnt + 
+                    (count(low, high, zero, one, len + one, dp) % MOD)
+                ) % MOD;
+
+            return dp[len] = cnt;
         }
 
-        return dp[len] = (
-                (count(low, high, zero, one, len + zero, dp) % MOD) +
+        int cnt = 0;
+        if (len + zero <= high) 
+            cnt = (cnt + 
+                (count(low, high, zero, one, len + zero, dp) % MOD)
+            ) % MOD;
+        if (len + one <= high) 
+            cnt = (cnt + 
                 (count(low, high, zero, one, len + one, dp) % MOD)
             ) % MOD;
+        return dp[len] = cnt;
     }
 
 public:
