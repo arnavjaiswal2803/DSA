@@ -1,25 +1,23 @@
 class Solution {
 public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
-        int n = days.size(), maxValidity = days[n - 1] + 30;
-        vector<int> next(maxValidity + 1, 0);
+        int n = days.size(), lastDay = days[n - 1];
+        vector<int> cost(lastDay + 1);
+        cost[0] = 0;
 
-        for (int idx = n - 1; idx >= 0; --idx) {
-            vector<int> curr(maxValidity + 1, 0);
-            for (int validUpto = maxValidity; validUpto >= 0; --validUpto) {
-                if (days[idx] <= validUpto) 
-                    curr[validUpto] = next[validUpto];
-                else {
-                    curr[validUpto] = min({
-                        costs[0] + next[days[idx]], 
-                        costs[1] + next[days[idx] + 6], 
-                        costs[2] + next[days[idx] + 29]
-                    });
-                }
+        int travelIdx = 0;
+        for (int currDay = 1; currDay <= lastDay; currDay++) {
+            if (currDay < days[travelIdx]) cost[currDay] = cost[currDay - 1];
+            else {
+                cost[currDay] = min({
+                    cost[currDay - 1] + costs[0], 
+                    cost[max(0, currDay - 7)] + costs[1], 
+                    cost[max(0, currDay - 30)] + costs[2]
+                });
+                travelIdx++;
             }
-            next = curr;
         }
 
-        return next[0];
+        return cost[lastDay];
     }
-}; 
+};
