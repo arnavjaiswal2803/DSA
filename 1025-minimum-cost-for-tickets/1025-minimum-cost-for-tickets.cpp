@@ -1,7 +1,7 @@
 class Solution {
 public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
-        int n = days.size(), maxValidity = 365 + 30;
+        int n = days.size(), maxValidity = days[n - 1] + 30;
         vector<vector<int>> dp(n + 1, vector<int>(maxValidity + 1, 0));
 
         for (int idx = n - 1; idx >= 0; --idx) {
