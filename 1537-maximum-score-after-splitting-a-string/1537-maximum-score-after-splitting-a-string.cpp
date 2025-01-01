@@ -1,15 +1,14 @@
 class Solution {
 public:
     int maxScore(string s) {
-        int n = s.size(), maxScore = 0, leftZeroCnt = 0, rightOneCnt = 0;
+        int n = s.size(), zeroes = 0, ones = 0, best = INT_MIN;
 
-        for (int i = n - 1; i >= 1; i--) rightOneCnt += s[i] == '1';
-        for (int i = 1; i < n; i++) {
-            leftZeroCnt += s[i - 1] == '0';
-            maxScore = max(maxScore, leftZeroCnt + rightOneCnt);
-            rightOneCnt -= s[i] == '1';
+        for (int i = 0; i < n - 1; i++) {
+            s[i] == '0' ? zeroes++ : ones++;
+            best = max(best, zeroes - ones);
         }
+        ones += s[n - 1] == '1';
 
-        return maxScore;
+        return best + ones;
     }
 };
