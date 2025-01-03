@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0189-rotate-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
+| [0283-move-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0300-longest-increasing-subsequence) |
 | [0312-burst-balloons](https://github.com/arnavjaiswal2803/DSA/tree/master/0312-burst-balloons) |
 | [0368-largest-divisible-subset](https://github.com/arnavjaiswal2803/DSA/tree/master/0368-largest-divisible-subset) |
@@ -592,6 +593,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0189-rotate-array) |
+| [0283-move-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0283-move-zeroes) |
 | [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0567-permutation-in-string](https://github.com/arnavjaiswal2803/DSA/tree/master/0567-permutation-in-string) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
