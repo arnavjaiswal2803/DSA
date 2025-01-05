@@ -19,14 +19,7 @@ public:
         for (int i = 0; i < n; i++) { 
             if (i > 0) prefixShifts[i] += prefixShifts[i - 1];
             prefixShifts[i] = (((prefixShifts[i] % 26) + 26) % 26);
-
-            char ch = s[i];
-            int numberOfShifts = prefixShifts[i];
-            while (numberOfShifts--) {
-                ch++;
-                if (ch > 'z') ch = 'a';
-            }
-            ans += ch;
+            ans += 'a' + ((s[i] - 'a' + prefixShifts[i]) % 26);
         }
 
         return ans;
