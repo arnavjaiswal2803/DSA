@@ -1,23 +1,25 @@
 class Solution {
 public:
     vector<int> minOperations(string boxes) {
-        int n = boxes.size();
-        vector<int> ans(n), movingRightPrefixSum(n), movingLeftPrefixSum(n);
+        int n = boxes.size(), rightOne = 0, rightSum = 0, leftOne = 0, leftSum = 0;
+        vector<int> ans(n);
         
-        int oneCount = 0;
         for (int i = 0; i < n; i++) {
-            movingRightPrefixSum[i] = oneCount;
-            if (i > 0) movingRightPrefixSum[i] += movingRightPrefixSum[i - 1];
-            if (boxes[i] == '1') oneCount++;
+            rightSum += rightOne;
+            if (boxes[i] == '1') rightOne++;
         }
 
-        oneCount = 0;
         for (int i = n - 1; i >= 0; i--) {
-            movingLeftPrefixSum[i] = oneCount;
-            if (i < n - 1) movingLeftPrefixSum[i] += movingLeftPrefixSum[i + 1];
-            if (boxes[i] == '1') oneCount++;
+            leftSum += leftOne;
 
-            ans[i] = movingRightPrefixSum[i] + movingLeftPrefixSum[i];
+            ans[i] = rightSum + leftSum;
+
+            if (boxes[i] == '1') {
+                leftOne++;
+                rightOne--;
+            }
+            
+            rightSum -= rightOne;
         }
 
         return ans;
