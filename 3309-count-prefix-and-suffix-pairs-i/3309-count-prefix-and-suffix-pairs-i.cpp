@@ -1,21 +1,15 @@
 class Solution {
-    bool isPrefix(string& str1, string& str2) {
-        int n = str1.size(), m = str2.size();
-        if (n > m) return false;
-        for (int i = 0, j = 0; i < n; i++, j++) if (str1[i]!=str2[j]) return false;
-        return true;
-    }
-
-    bool isSuffix(string& str1, string& str2) {
-        int n = str1.size(), m = str2.size();
-        if (n > m) return false;
-        for (int i = n - 1, j =  m - 1; i >= 0; i--, j--) 
-            if (str1[i]!=str2[j]) return false;
-        return true;
-    }
-
     bool isPrefixAndSuffix(string& str1, string& str2) {
-        return isPrefix(str1, str2) && isSuffix(str1, str2);
+        int n = str1.size(), m = str2.size();
+        if (n > m) return false;
+
+        int prefixI = 0, prefixJ = 0, suffixI = n - 1, suffixJ = m - 1;
+        while (prefixI < n && suffixI >= 0) {
+            if (str1[prefixI++] != str2[prefixJ++]) return false;
+            if (str1[suffixI--] != str2[suffixJ--]) return false;
+        }
+        
+        return true;
     }
 public:
     int countPrefixSuffixPairs(vector<string>& words) {
