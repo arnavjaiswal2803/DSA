@@ -10,6 +10,6 @@ public:
                 break;
             }
         }
-        sort(nums.begin() + i, nums.end());
+        reverse(nums.begin() + i, nums.end());
     }
 };
