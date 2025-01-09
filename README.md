@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/arnavjaiswal2803/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/arnavjaiswal2803/DSA/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
+| [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0189-rotate-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0209-minimum-size-subarray-sum) |
@@ -145,6 +146,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/arnavjaiswal2803/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0432-all-oone-data-structure](https://github.com/arnavjaiswal2803/DSA/tree/master/0432-all-oone-data-structure) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0567-permutation-in-string](https://github.com/arnavjaiswal2803/DSA/tree/master/0567-permutation-in-string) |
@@ -690,6 +692,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/arnavjaiswal2803/DSA/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/arnavjaiswal2803/DSA/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
