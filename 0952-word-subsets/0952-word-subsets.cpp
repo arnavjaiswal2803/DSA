@@ -1,31 +1,35 @@
 class Solution {
-    bool isUniversal(string& s1, unordered_map<char, int> freq) {
+    bool isUniversal(string& s1, vector<int> freq, int size) {
         for (char &ch : s1) {
-            if (freq.find(ch) != freq.end()) {
-                freq[ch]--;
-                if (freq[ch] == 0) freq.erase(ch); 
-            }
+            freq[ch - 'a']--;
+            if (freq[ch - 'a'] == 0) size--; 
         }
-        return freq.size() == 0;
+        return size == 0;
     }
 public:
     vector<string> wordSubsets(vector<string>& words1, vector<string>& words2) {
-        int n = words1.size(), m = words2.size();
-        unordered_map<char, int> freq;
+        int n = words1.size(), m = words2.size(), size = 0;
+        vector<int> freq(26, 0);
         vector<string> universalStrings;
 
-        for (char &ch : words2[0]) freq[ch]++;
+        for (char &ch : words2[0]) {
+            freq[ch - 'a']++;
+            if (freq[ch - 'a'] == 1) size++;
+        }
 
         for (int i = 1; i < m; i++) {
-            unordered_map<char, int> currFreq;
+            vector<int> currFreq(26, 0);
             for (char &ch : words2[i]) {
-                currFreq[ch]++;
-                if (currFreq[ch] > freq[ch]) freq[ch]++;
+                currFreq[ch - 'a']++;
+                if (currFreq[ch - 'a'] > freq[ch - 'a']) {
+                    freq[ch - 'a']++;
+                    if (freq[ch - 'a'] == 1) size++;
+                }
             }
         }
-        
+
         for (string& s1 : words1) 
-            if (isUniversal(s1, freq)) universalStrings.push_back(s1);
+            if (isUniversal(s1, freq, size)) universalStrings.push_back(s1);
 
         return universalStrings;
     }
