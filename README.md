@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/arnavjaiswal2803/DSA/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0084-largest-rectangle-in-histogram](https://github.com/arnavjaiswal2803/DSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0120-triangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0120-triangle) |
@@ -147,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/arnavjaiswal2803/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0432-all-oone-data-structure](https://github.com/arnavjaiswal2803/DSA/tree/master/0432-all-oone-data-structure) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
@@ -669,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
+| [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
 | [0967-minimum-falling-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0967-minimum-falling-path-sum) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/arnavjaiswal2803/DSA/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
