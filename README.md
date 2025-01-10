@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/arnavjaiswal2803/DSA/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/arnavjaiswal2803/DSA/tree/master/0031-next-permutation) |
 | [0045-jump-game-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0045-jump-game-ii) |
+| [0048-rotate-image](https://github.com/arnavjaiswal2803/DSA/tree/master/0048-rotate-image) |
 | [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/arnavjaiswal2803/DSA/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
@@ -377,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/arnavjaiswal2803/DSA/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/arnavjaiswal2803/DSA/tree/master/0062-unique-paths) |
 | [0189-rotate-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0189-rotate-array) |
 | [0241-different-ways-to-add-parentheses](https://github.com/arnavjaiswal2803/DSA/tree/master/0241-different-ways-to-add-parentheses) |
@@ -669,6 +671,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0048-rotate-image](https://github.com/arnavjaiswal2803/DSA/tree/master/0048-rotate-image) |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
