@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0031-next-permutation](https://github.com/arnavjaiswal2803/DSA/tree/master/0031-next-permutation) |
 | [0045-jump-game-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/arnavjaiswal2803/DSA/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/arnavjaiswal2803/DSA/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/arnavjaiswal2803/DSA/tree/master/0056-merge-intervals) |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
@@ -660,6 +661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0054-spiral-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/0054-spiral-matrix) |
 | [1667-find-kth-bit-in-nth-binary-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1667-find-kth-bit-in-nth-binary-string) |
 | [2232-adding-spaces-to-a-string](https://github.com/arnavjaiswal2803/DSA/tree/master/2232-adding-spaces-to-a-string) |
 | [2271-rearrange-array-elements-by-sign](https://github.com/arnavjaiswal2803/DSA/tree/master/2271-rearrange-array-elements-by-sign) |
@@ -672,6 +674,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/arnavjaiswal2803/DSA/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/0054-spiral-matrix) |
 | [0063-unique-paths-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
