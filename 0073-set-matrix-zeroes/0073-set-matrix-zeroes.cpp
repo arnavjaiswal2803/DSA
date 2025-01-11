@@ -12,18 +12,18 @@ public:
         }
 
         for (int row = n - 1; row > 0; row--) {
-            if (matrix[row][0] != 0) continue;
-            for (int col = 1; col < m; col++) matrix[row][col] = 0;
+            for (int col = m - 1; col > 0; col--) {
+                if (matrix[row][col] == 0) continue;
+                if (matrix[row][0] == 0|| matrix[0][col] == 0) matrix[row][col] = 0;
+            }
         }
 
-        for (int col = m - 1; col >= 0; col--) {
-            if (matrix[0][col] != 0) continue;
-            for (int row = 1; row < n; row++) matrix[row][col] = 0;
+        if (matrix[0][0] == 0) {
+            for (int row = 1; row < n; row++) matrix[row][0] = 0;
         }
 
         if (isFirstRowZero) {
             for (int col = 0; col < m; col++) matrix[0][col] = 0;
         }
-
     }
 };
