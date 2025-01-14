@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0189-rotate-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0209-minimum-size-subarray-sum) |
+| [0229-majority-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0229-majority-element-ii) |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
 | [0283-move-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0283-move-zeroes) |
 | [0300-longest-increasing-subsequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0300-longest-increasing-subsequence) |
@@ -156,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/arnavjaiswal2803/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
+| [0229-majority-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0229-majority-element-ii) |
 | [0432-all-oone-data-structure](https://github.com/arnavjaiswal2803/DSA/tree/master/0432-all-oone-data-structure) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/arnavjaiswal2803/DSA/tree/master/0560-subarray-sum-equals-k) |
@@ -276,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [0229-majority-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0229-majority-element-ii) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/arnavjaiswal2803/DSA/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1034-subarrays-with-k-different-integers](https://github.com/arnavjaiswal2803/DSA/tree/master/1034-subarrays-with-k-different-integers) |
 | [1502-construct-k-palindrome-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1502-construct-k-palindrome-strings) |
@@ -411,6 +414,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0056-merge-intervals](https://github.com/arnavjaiswal2803/DSA/tree/master/0056-merge-intervals) |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
+| [0229-majority-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0229-majority-element-ii) |
 | [0368-largest-divisible-subset](https://github.com/arnavjaiswal2803/DSA/tree/master/0368-largest-divisible-subset) |
 | [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
