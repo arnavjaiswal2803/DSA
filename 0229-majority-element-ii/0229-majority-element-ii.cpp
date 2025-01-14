@@ -5,9 +5,9 @@ public:
         unordered_map<int, int> freq;
         vector<int> ans;
 
-        for (int &num : nums) freq[num]++;
-        for (auto &it : freq) {
-            if (it.second > n / 3) ans.push_back(it.first);
+        for (int &num : nums) {
+            freq[num]++;
+            if (freq[num] == n / 3 + 1) ans.push_back(num);
         }
 
         return ans;
