@@ -1,14 +1,18 @@
 class Solution {
+    vector<int> getNthRow(int rowIndex) {
+        vector<int> row = {1};
+        long long res = 1;
+        for (int c = 0; c < rowIndex; c++) {
+            res *= (rowIndex - c);
+            res /= (c + 1);
+            row.push_back(res);
+        }
+        return row;
+    }
 public:
     vector<vector<int>> generate(int numRows) {
         vector<vector<int>> pascal;
-        for (int i = 1; i <= numRows; i++) {
-            vector<int> currRow(i, 1);
-            for (int j = 1; j < i - 1; j++) {
-                currRow[j] = pascal[i - 1 - 1][j - 1] + pascal[i - 1 - 1][j];
-            }
-            pascal.push_back(currRow);
-        }
+        for (int i = 0; i < numRows; i++) pascal.push_back(getNthRow(i));
         return pascal;
     }
 };
