@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/arnavjaiswal2803/DSA/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1435-xor-queries-of-a-subarray](https://github.com/arnavjaiswal2803/DSA/tree/master/1435-xor-queries-of-a-subarray) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/arnavjaiswal2803/DSA/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1524-string-matching-in-an-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1524-string-matching-in-an-array) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/arnavjaiswal2803/DSA/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
@@ -335,6 +336,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/arnavjaiswal2803/DSA/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1304-longest-happy-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1304-longest-happy-string) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [1917-maximum-average-pass-ratio](https://github.com/arnavjaiswal2803/DSA/tree/master/1917-maximum-average-pass-ratio) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/arnavjaiswal2803/DSA/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
@@ -559,6 +561,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0515-find-largest-value-in-each-tree-row](https://github.com/arnavjaiswal2803/DSA/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/arnavjaiswal2803/DSA/tree/master/1442-number-of-operations-to-make-network-connected) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/arnavjaiswal2803/DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/2493-reverse-odd-levels-of-binary-tree) |
@@ -717,6 +720,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/arnavjaiswal2803/DSA/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/arnavjaiswal2803/DSA/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1753-path-with-minimum-effort](https://github.com/arnavjaiswal2803/DSA/tree/master/1753-path-with-minimum-effort) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/arnavjaiswal2803/DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
@@ -749,6 +753,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1300-critical-connections-in-a-network](https://github.com/arnavjaiswal2803/DSA/tree/master/1300-critical-connections-in-a-network) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/arnavjaiswal2803/DSA/tree/master/1442-number-of-operations-to-make-network-connected) |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/arnavjaiswal2803/DSA/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/arnavjaiswal2803/DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [3189-find-champion-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/3189-find-champion-ii) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/arnavjaiswal2803/DSA/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
@@ -756,6 +761,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance](https://github.com/arnavjaiswal2803/DSA/tree/master/1456-find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance) |
+| [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/arnavjaiswal2803/DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 ## Biconnected Component
 |  |
