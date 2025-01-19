@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0300-longest-increasing-subsequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0300-longest-increasing-subsequence) |
 | [0312-burst-balloons](https://github.com/arnavjaiswal2803/DSA/tree/master/0312-burst-balloons) |
 | [0368-largest-divisible-subset](https://github.com/arnavjaiswal2803/DSA/tree/master/0368-largest-divisible-subset) |
+| [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
 | [0416-partition-equal-subset-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0416-partition-equal-subset-sum) |
 | [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
 | [0494-target-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0494-target-sum) |
@@ -333,6 +334,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0023-merge-k-sorted-lists) |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
+| [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/arnavjaiswal2803/DSA/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1304-longest-happy-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1304-longest-happy-string) |
@@ -558,6 +560,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0100-same-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/arnavjaiswal2803/DSA/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/arnavjaiswal2803/DSA/tree/master/1442-number-of-operations-to-make-network-connected) |
@@ -716,6 +719,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0064-minimum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0085-maximal-rectangle](https://github.com/arnavjaiswal2803/DSA/tree/master/0085-maximal-rectangle) |
+| [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
 | [0967-minimum-falling-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0967-minimum-falling-path-sum) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/arnavjaiswal2803/DSA/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
