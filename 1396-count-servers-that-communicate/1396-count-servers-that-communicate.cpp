@@ -1,18 +1,39 @@
 class Solution {
-    bool hasServer(vector<vector<int>>& grid, int m, int n, int r, int c) {
-        for (int row = r - 1; row >= 0; row--) if (grid[row][c]) return true;
-        for (int row = r + 1; row < m; row++) if (grid[row][c]) return true;
-        for (int col = c - 1; col >= 0; col--) if (grid[r][col]) return true;
-        for (int col = c + 1; col < n; col++) if (grid[r][col]) return true;
-        return false;
-    }
 public:
     int countServers(vector<vector<int>>& grid) {
         int m = grid.size(), n = grid[0].size(), ans = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) 
-                if (grid[i][j] && hasServer(grid, m, n, i, j)) ans++;
+        vector<vector<int>> dupGrid(grid);
+
+        for (int row = 0; row < m; row++) {
+            bool hasServer = false;
+            int count = 0;
+            for (int col = 0; col < n; col++) {
+                if (dupGrid[row][col] == 1) {
+                    count++;
+                } else if (dupGrid[row][col] == 2) {
+                    hasServer = true;
+                }
+            }
+            if (count > 1 || hasServer) {
+                ans += count;
+                for (int col = 0; col < n; col++) 
+                    if (dupGrid[row][col]) dupGrid[row][col] = 2;
+            }
         }
+        
+        for (int col = 0; col < n; col++) {
+            bool hasServer = false;
+            int count = 0;
+            for (int row = 0; row < m; row++) {
+                if (dupGrid[row][col] == 1) {
+                    count++;
+                } else if (dupGrid[row][col] == 2) {
+                    hasServer = true;
+                }
+            }
+            if (count > 1 || hasServer) ans += count;
+        }
+
         return ans;
     }
 };
