@@ -6,13 +6,8 @@ class Solution {
     }
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        if (n == 0) return;
-        if (m == 0) {
-            nums1 = nums2;
-            return;
-        }
-        
         int gap = ceil((float)(m + n) / 2.0), gapOneCount = 0;
+
         while (gapOneCount < 2) {
             int i = 0, j = gap;
             while (j < m + n) {
@@ -23,6 +18,7 @@ public:
                 i++;
                 j++;
             }
+            
             gap = ceil((float)gap / 2.0);
             if (gap == 1) gapOneCount++;
         }
