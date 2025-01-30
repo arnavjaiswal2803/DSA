@@ -1,4 +1,9 @@
 class Solution {
+    void swap(int* a, int* b) {
+        int temp = *a;
+        *a = *b;
+        *b = temp;
+    }
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
         if (n == 0) return;
@@ -7,15 +12,20 @@ public:
             return;
         }
         
-        int i = m - 1, j = 0;
-        while (i >= 0 && j < n && nums1[i] > nums2[j]) {
-            swap(nums1[i], nums2[j]);
-            i--;
-            j++;
-        }
+        int gap = ceil((float)(m + n) / 2.0), gapOneCount = 0;
+        while (gapOneCount < 2) {
+            int i = 0, j = gap;
+            while (j < m + n) {
+                int* a = i < m ? &nums1[i] : &nums2[i - m];
+                int* b = j < m ? &nums1[j] : &nums2[j - m];
 
-        sort(nums1.begin(), nums1.begin() + m);
-        sort(nums2.begin(), nums2.end());
+                if (*a > *b) swap(a, b);
+                i++;
+                j++;
+            }
+            gap = ceil((float)gap / 2.0);
+            if (gap == 1) gapOneCount++;
+        }
 
         for (int i = m; i < m + n; i++) nums1[i] = nums2[i - m];
     }
