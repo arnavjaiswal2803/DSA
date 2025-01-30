@@ -6,7 +6,7 @@ class Solution {
     }
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        int gap = ceil((float)(m + n) / 2.0);
+        int gap = ((m + n) / 2) + ((m + n) % 2); // ceil
         while (gap > 0) {
             int i = 0, j = gap;
             while (j < m + n) {
@@ -19,7 +19,7 @@ public:
             }
 
             if (gap == 1) break;
-            gap = ceil((float)gap / 2.0);
+            gap = (gap / 2) + (gap % 2); // ceil
         }
 
         for (int i = m; i < m + n; i++) nums1[i] = nums2[i - m];
