@@ -6,9 +6,8 @@ class Solution {
     }
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
-        int gap = ceil((float)(m + n) / 2.0), gapOneCount = 0;
-
-        while (gapOneCount < 2) {
+        int gap = ceil((float)(m + n) / 2.0);
+        while (gap > 0) {
             int i = 0, j = gap;
             while (j < m + n) {
                 int* a = i < m ? &nums1[i] : &nums2[i - m];
@@ -18,9 +17,9 @@ public:
                 i++;
                 j++;
             }
-            
+
+            if (gap == 1) break;
             gap = ceil((float)gap / 2.0);
-            if (gap == 1) gapOneCount++;
         }
 
         for (int i = m; i < m + n; i++) nums1[i] = nums2[i - m];
