@@ -551,6 +551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0104-maximum-depth-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0110-balanced-binary-tree) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0210-course-schedule-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0210-course-schedule-ii) |
 | [0386-lexicographical-numbers](https://github.com/arnavjaiswal2803/DSA/tree/master/0386-lexicographical-numbers) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/arnavjaiswal2803/DSA/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0543-diameter-of-binary-tree) |
@@ -577,6 +578,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0100-same-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0100-same-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0210-course-schedule-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0210-course-schedule-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/arnavjaiswal2803/DSA/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0684-redundant-connection](https://github.com/arnavjaiswal2803/DSA/tree/master/0684-redundant-connection) |
@@ -789,6 +791,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph
 |  |
 | ------- |
+| [0210-course-schedule-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0210-course-schedule-ii) |
 | [0684-redundant-connection](https://github.com/arnavjaiswal2803/DSA/tree/master/0684-redundant-connection) |
 | [0801-is-graph-bipartite](https://github.com/arnavjaiswal2803/DSA/tree/master/0801-is-graph-bipartite) |
 | [0820-find-eventual-safe-states](https://github.com/arnavjaiswal2803/DSA/tree/master/0820-find-eventual-safe-states) |
@@ -824,6 +827,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Topological Sort
 |  |
 | ------- |
+| [0210-course-schedule-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0210-course-schedule-ii) |
 | [0820-find-eventual-safe-states](https://github.com/arnavjaiswal2803/DSA/tree/master/0820-find-eventual-safe-states) |
 | [1558-course-schedule-iv](https://github.com/arnavjaiswal2803/DSA/tree/master/1558-course-schedule-iv) |
 | [2246-maximum-employees-to-be-invited-to-a-meeting](https://github.com/arnavjaiswal2803/DSA/tree/master/2246-maximum-employees-to-be-invited-to-a-meeting) |
