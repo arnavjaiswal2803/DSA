@@ -555,6 +555,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0515-find-largest-value-in-each-tree-row](https://github.com/arnavjaiswal2803/DSA/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/arnavjaiswal2803/DSA/tree/master/0543-diameter-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/arnavjaiswal2803/DSA/tree/master/0684-redundant-connection) |
+| [0801-is-graph-bipartite](https://github.com/arnavjaiswal2803/DSA/tree/master/0801-is-graph-bipartite) |
 | [0820-find-eventual-safe-states](https://github.com/arnavjaiswal2803/DSA/tree/master/0820-find-eventual-safe-states) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/arnavjaiswal2803/DSA/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [0988-flip-equivalent-binary-trees](https://github.com/arnavjaiswal2803/DSA/tree/master/0988-flip-equivalent-binary-trees) |
@@ -579,6 +580,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/arnavjaiswal2803/DSA/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0684-redundant-connection](https://github.com/arnavjaiswal2803/DSA/tree/master/0684-redundant-connection) |
+| [0801-is-graph-bipartite](https://github.com/arnavjaiswal2803/DSA/tree/master/0801-is-graph-bipartite) |
 | [0820-find-eventual-safe-states](https://github.com/arnavjaiswal2803/DSA/tree/master/0820-find-eventual-safe-states) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/arnavjaiswal2803/DSA/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1396-count-servers-that-communicate](https://github.com/arnavjaiswal2803/DSA/tree/master/1396-count-servers-that-communicate) |
@@ -776,6 +778,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [0684-redundant-connection](https://github.com/arnavjaiswal2803/DSA/tree/master/0684-redundant-connection) |
+| [0801-is-graph-bipartite](https://github.com/arnavjaiswal2803/DSA/tree/master/0801-is-graph-bipartite) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/arnavjaiswal2803/DSA/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1396-count-servers-that-communicate](https://github.com/arnavjaiswal2803/DSA/tree/master/1396-count-servers-that-communicate) |
 | [1442-number-of-operations-to-make-network-connected](https://github.com/arnavjaiswal2803/DSA/tree/master/1442-number-of-operations-to-make-network-connected) |
@@ -787,6 +790,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0684-redundant-connection](https://github.com/arnavjaiswal2803/DSA/tree/master/0684-redundant-connection) |
+| [0801-is-graph-bipartite](https://github.com/arnavjaiswal2803/DSA/tree/master/0801-is-graph-bipartite) |
 | [0820-find-eventual-safe-states](https://github.com/arnavjaiswal2803/DSA/tree/master/0820-find-eventual-safe-states) |
 | [0984-most-stones-removed-with-same-row-or-column](https://github.com/arnavjaiswal2803/DSA/tree/master/0984-most-stones-removed-with-same-row-or-column) |
 | [1300-critical-connections-in-a-network](https://github.com/arnavjaiswal2803/DSA/tree/master/1300-critical-connections-in-a-network) |
