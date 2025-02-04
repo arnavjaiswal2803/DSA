@@ -1,39 +1,19 @@
 class Solution {
 public:
     int longestMonotonicSubarray(vector<int>& nums) {
-        int maxLength = 0;
+        int n = nums.size(), maxLen = 1;
 
-        // Find longest strictly increasing subarray
-        for (int start = 0; start < nums.size(); start++) {
-            int currLength = 1;
-            for (int pos = start + 1; pos < nums.size(); pos++) {
-                // Extend subarray if next element is larger
-                if (nums[pos] > nums[pos - 1]) {
-                    currLength++;
-                } else {
-                    // Break if sequence is not increasing anymore
-                    break;
-                }
+        for (int i = 0; i < n; i++) {
+            bool isIncreasing = true, isDecreasing = true;
+            for (int j = i + 1; j < n; j++) {
+                if (nums[j] <= nums[j - 1]) isIncreasing = false;
+                if (nums[j] >= nums[j - 1]) isDecreasing = false;
+
+                if (isIncreasing || isDecreasing) maxLen = max(maxLen, j - i + 1);
+                else break;
             }
-            maxLength = max(maxLength, currLength);
         }
 
-        // Find longest strictly decreasing subarray
-        for (int start = 0; start < nums.size(); start++) {
-            int currLength = 1;
-            for (int pos = start + 1; pos < nums.size(); pos++) {
-                // Extend subarray if next element is smaller
-                if (nums[pos] < nums[pos - 1]) {
-                    currLength++;
-                } else {
-                    // Break if sequence is not decreasing anymore
-                    break;
-                }
-            }
-            maxLength = max(maxLength, currLength);
-        }
-
-        return maxLength;  // Return the longer of increasing or decreasing
-                           // sequences
+        return maxLen;
     }
 };
