@@ -2,11 +2,10 @@ class Solution {
 public:
     string removeOccurrences(string s, string part) {
         string ans = s;
-        int idx = ans.find(part), m = part.size();
+        int m = part.size();
 
-        while (idx != string::npos) {
+        for (int idx = ans.find(part); idx != string::npos; idx = ans.find(part)) {
             ans.erase(idx, m);
-            idx = ans.find(part);
         }
 
         return ans;
