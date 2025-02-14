@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0015-3sum) |
 | [0027-remove-element](https://github.com/arnavjaiswal2803/DSA/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/arnavjaiswal2803/DSA/tree/master/0031-next-permutation) |
 | [0045-jump-game-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0045-jump-game-ii) |
@@ -464,6 +465,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0015-3sum) |
 | [0056-merge-intervals](https://github.com/arnavjaiswal2803/DSA/tree/master/0056-merge-intervals) |
 | [0088-merge-sorted-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0088-merge-sorted-array) |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
@@ -732,6 +734,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0015-3sum) |
 | [0027-remove-element](https://github.com/arnavjaiswal2803/DSA/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/arnavjaiswal2803/DSA/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0088-merge-sorted-array) |
