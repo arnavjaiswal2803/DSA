@@ -1,5 +1,6 @@
 class Solution {
     bool canPartition(string &numStr, int idx, int len, int sum, int target) {
+        if (sum > target) return false;
         if (idx == len) return sum == target;
 
         int num = 0;
