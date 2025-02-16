@@ -3,7 +3,6 @@ public:
     long long maxWeight(vector<int>& pizzas) {
         int n = pizzas.size(), days = n / 4;
         long long ans = 0;
-        int evens = days / 2, odds = n - evens;
 
         sort (pizzas.begin(), pizzas.end());
 
