@@ -2,25 +2,21 @@ class Solution {
 public:
     long long maxWeight(vector<int>& pizzas) {
         int n = pizzas.size(), days = n / 4;
-        long long ans = 0;
+        long long totalWeight = 0;
 
         sort (pizzas.begin(), pizzas.end());
 
-        int day = 1, ptr = n - 1;
-        while (day <= days) {
-            ans += pizzas[ptr];
-            ptr--;
-            day += 2;
-        }
-        ptr--;
-
-        day = 2;
-        while (day <= days) {
-            ans += pizzas[ptr];
-            ptr -= 2;
-            day += 2;
+        int index = n - 1;
+        for (int day = 1; day <= days; day += 2) {
+            totalWeight += pizzas[index--];
         }
 
-        return ans;
+        index--; // Move to second heaviest pizza
+        for (int day = 2; day <= days; day += 2) {
+            totalWeight += pizzas[index];
+            index -= 2;
+        }
+
+        return totalWeight;
     }
 };
