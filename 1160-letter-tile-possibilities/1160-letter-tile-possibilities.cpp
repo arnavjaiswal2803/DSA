@@ -1,29 +1,21 @@
 class Solution {
+    void count(string tiles, string curr, unordered_set<string>& hash) {
+        hash.insert(curr);
+        if (tiles.size() == 0) return;
+
+        for (int i = 0; i < tiles.size(); i++) {
+            string newTiles = tiles.substr(0, i) + tiles.substr(i + 1);
+            count(newTiles, curr + tiles[i], hash);
+        }
+    }
 public:
     int numTilePossibilities(string tiles) {
-        unordered_set<string> sequences;
-        vector<bool> used(tiles.length(), false);
-
-        // Generate all possible sequences including empty string
-        generateSequences(tiles, "", used, sequences);
-
-        // Subtract 1 to exclude empty string from count
-        return sequences.size() - 1;
-    }
-
-private:
-    void generateSequences(string& tiles, string current, vector<bool>& used,
-                           unordered_set<string>& sequences) {
-        // Add current sequence to set
-        sequences.insert(current);
-
-        // Try adding each unused character to current sequence
-        for (int pos = 0; pos < tiles.length(); ++pos) {
-            if (!used[pos]) {
-                used[pos] = true;
-                generateSequences(tiles, current + tiles[pos], used, sequences);
-                used[pos] = false;
-            }
+        int n = tiles.size();
+        unordered_set<string> hash;
+        for (int i = 0; i < n; i++) {
+            string newTiles = tiles.substr(0, i) + tiles.substr(i + 1);
+            count(newTiles, to_string(tiles[i]), hash);
         }
+        return hash.size();
     }
 };
