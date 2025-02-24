@@ -28,14 +28,14 @@ private:
         for (int i = 0; i < n; i++) {
             if (traversal[i] == '-') dashCount++;
             else {
-                string numStr = "";
+                int val = 0;
                 while (i < n && traversal[i] != '-') {
-                    numStr += traversal[i];
+                    val = (val * 10) + (traversal[i] - '0');
                     i++;
                 }
                 i--;
 
-                valDepthMap.push_back({stoi(numStr), dashCount});
+                valDepthMap.push_back({val, dashCount});
                 dashCount = 0;
             }
         }
