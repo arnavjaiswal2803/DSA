@@ -1,40 +1,57 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
 class Solution {
 public:
+
     TreeNode* recoverFromPreorder(string traversal) {
-        int index = 0;
-        return helper(traversal, index, 0);
+        vector<pair<int, int>> valDepthMap = getValDepthMap(traversal);
+        int idx = 0;
+        TreeNode* root = constructTree(0, valDepthMap, idx);
+        return root;
     }
 
 private:
-    TreeNode* helper(const string& traversal, int& index, int depth) {
-        if (index >= traversal.size()) return nullptr;
 
-        // Count the number of dashes
-        int dashCount = 0;
-        while (index + dashCount < traversal.size() &&
-               traversal[index + dashCount] == '-') {
-            dashCount++;
+    vector<pair<int, int>> getValDepthMap(string traversal) {
+        vector<pair<int, int>> valDepthMap;
+        int n = traversal.size(), dashCount = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (traversal[i] == '-') dashCount++;
+            else {
+                string numStr = "";
+                while (i < n && traversal[i] != '-') {
+                    numStr += traversal[i];
+                    i++;
+                }
+                i--;
+
+                valDepthMap.push_back({stoi(numStr), dashCount});
+                dashCount = 0;
+            }
         }
 
-        // If the number of dashes doesn't match the current depth, return null
-        if (dashCount != depth) return nullptr;
+        return valDepthMap;
+    }
 
-        // Move index past the dashes
-        index += dashCount;
+    TreeNode* constructTree(int depth, vector<pair<int, int>>& valDepthMap, int& idx) {
+        if (idx >= valDepthMap.size()) return NULL;
+        if (valDepthMap[idx].second != depth) return NULL;
 
-        // Extract the node value
-        int value = 0;
-        while (index < traversal.size() && isdigit(traversal[index])) {
-            value = value * 10 + (traversal[index] - '0');
-            index++;
-        }
+        TreeNode* node = new TreeNode(valDepthMap[idx].first);
+        idx++;
 
-        // Create the current node
-        TreeNode* node = new TreeNode(value);
-
-        // Recursively build the left and right subtrees
-        node->left = helper(traversal, index, depth + 1);
-        node->right = helper(traversal, index, depth + 1);
+        node->left = constructTree(depth + 1, valDepthMap, idx);
+        if (node->left) node->right = constructTree(depth + 1, valDepthMap, idx);
 
         return node;
     }
