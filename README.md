@@ -124,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/arnavjaiswal2803/DSA/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/arnavjaiswal2803/DSA/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [1876-map-of-highest-peak](https://github.com/arnavjaiswal2803/DSA/tree/master/1876-map-of-highest-peak) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/arnavjaiswal2803/DSA/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/arnavjaiswal2803/DSA/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
@@ -557,6 +558,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/arnavjaiswal2803/DSA/tree/master/1669-minimum-cost-to-cut-a-stick) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/arnavjaiswal2803/DSA/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
+| [1849-maximum-absolute-sum-of-any-subarray](https://github.com/arnavjaiswal2803/DSA/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2554-minimum-total-distance-traveled](https://github.com/arnavjaiswal2803/DSA/tree/master/2554-minimum-total-distance-traveled) |
