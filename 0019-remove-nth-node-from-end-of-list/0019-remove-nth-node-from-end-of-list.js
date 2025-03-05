@@ -13,25 +13,17 @@
 var removeNthFromEnd = function(head, n) {
     if (head === null) return null;
 
-    const len = getLength(head);
-    if (n === len) return head.next;
+    let fast = head;
+    for (let i = 0; i < n; i++) fast = fast.next;
 
-    let curr = head, prev = null;
-    for (let i = 1; i < len - n + 1; i++) {
-        prev = curr;
-        curr = curr.next;
+    if (fast == null) return head.next;
+
+    let slow = head;
+    while (fast.next != null) {
+        slow = slow.next;
+        fast = fast.next;
     }
-    prev.next = curr.next;
+    slow.next = slow.next.next;
 
     return head;
 };
-
-function getLength(head) {
-    let len = 0;
-    let node = head;
-    while (node != null) {
-        len++;
-        node = node.next;
-    }
-    return len;
-}
