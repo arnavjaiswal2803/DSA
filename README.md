@@ -209,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/arnavjaiswal2803/DSA/tree/master/0013-roman-to-integer) |
 | [0073-set-matrix-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/arnavjaiswal2803/DSA/tree/master/0128-longest-consecutive-sequence) |
+| [0142-linked-list-cycle-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0142-linked-list-cycle-ii) |
 | [0229-majority-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0229-majority-element-ii) |
 | [0432-all-oone-data-structure](https://github.com/arnavjaiswal2803/DSA/tree/master/0432-all-oone-data-structure) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
@@ -785,6 +786,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0023-merge-k-sorted-lists) |
+| [0142-linked-list-cycle-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0142-linked-list-cycle-ii) |
 | [0432-all-oone-data-structure](https://github.com/arnavjaiswal2803/DSA/tree/master/0432-all-oone-data-structure) |
 | [0859-design-circular-deque](https://github.com/arnavjaiswal2803/DSA/tree/master/0859-design-circular-deque) |
 ## Divide and Conquer
@@ -828,6 +830,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/arnavjaiswal2803/DSA/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/arnavjaiswal2803/DSA/tree/master/0031-next-permutation) |
 | [0088-merge-sorted-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0088-merge-sorted-array) |
+| [0142-linked-list-cycle-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0142-linked-list-cycle-ii) |
 | [0189-rotate-array](https://github.com/arnavjaiswal2803/DSA/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/arnavjaiswal2803/DSA/tree/master/0283-move-zeroes) |
 | [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
