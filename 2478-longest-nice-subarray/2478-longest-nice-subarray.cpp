@@ -5,7 +5,7 @@ public:
 
         for (int start = 0, end = 0; end < n; end++) {
             while ((bitmask & nums[end]) > 0) {
-                bitmask &= ~nums[start];
+                bitmask ^= nums[start];
                 start++;
             }
             bitmask |= nums[end];
