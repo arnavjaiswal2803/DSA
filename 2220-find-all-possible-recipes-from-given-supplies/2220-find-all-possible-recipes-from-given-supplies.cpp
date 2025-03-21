@@ -4,12 +4,12 @@ public:
                                   vector<vector<string>>& ingredients,
                                   vector<string>& supplies) {
         int n = recipes.size();
-        unordered_set<string> suppliesSet(supplies.begin(), supplies.end()), 
-            ansSet;
+        unordered_set<string> suppliesSet(supplies.begin(), supplies.end());
+        vector<string> ans;
 
         for (int cnt = 0; cnt < n; cnt++) {
             for (int i = 0; i < n; i++) {
-                if (ansSet.find(recipes[i]) != ansSet.end()) continue;
+                if (suppliesSet.find(recipes[i]) != suppliesSet.end()) continue;
                 
                 bool canMake = true;
                 for (string& ingredient : ingredients[i]) {
@@ -19,13 +19,12 @@ public:
                     }
                 }
                 if (canMake) {
-                    ansSet.insert(recipes[i]);
+                    ans.push_back(recipes[i]);
                     suppliesSet.insert(recipes[i]);
                 }
             }
         }
 
-        vector<string> ans(ansSet.begin(), ansSet.end());
         return ans;
     }
 };
