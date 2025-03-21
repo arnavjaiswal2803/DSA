@@ -36,8 +36,7 @@ public:
 
 private:
     class DisjointSet {
-        vector<int> parent;
-        vector<long long> rank;
+        vector<int> parent, rank;
 
     public:
         DisjointSet(int n) {
