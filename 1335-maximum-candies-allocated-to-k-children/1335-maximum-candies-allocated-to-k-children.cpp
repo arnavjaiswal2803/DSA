@@ -1,49 +1,30 @@
 class Solution {
+    typedef long long ll;
 public:
     int maximumCandies(vector<int>& candies, long long k) {
-        // Find the maximum number of candies in any pile
-        int maxCandiesInPile = 0;
-        for (int i = 0; i < candies.size(); i++) {
-            maxCandiesInPile = max(maxCandiesInPile, candies[i]);
+        ll totalCandies = 0;
+
+        for (int &pileSize : candies) totalCandies += pileSize;
+        if (totalCandies < k) return 0;
+
+        ll low = 1, high = totalCandies / k;
+        while (low <= high) {
+            int mid = (low + ((high - low) >> 1));
+
+            if (canAllocate(candies, mid, k)) low = mid + 1;
+            else high = mid - 1;
         }
 
-        // Set the initial search range for binary search
-        int left = 0;
-        int right = maxCandiesInPile;
-
-        // Binary search to find the maximum number of candies each child can
-        // get
-        while (left < right) {
-            // Calculate the middle value of the current range
-            int middle = (left + right + 1) / 2;
-
-            // Check if it's possible to allocate candies so that each child
-            // gets 'middle' candies
-            if (canAllocateCandies(candies, k, middle)) {
-                // If possible, move to the upper half to search for a larger
-                // number
-                left = middle;
-            } else {
-                // Otherwise, move to the lower half
-                right = middle - 1;
-            }
-        }
-
-        return left;
+        return (int)high;
     }
 
-private:
-    bool canAllocateCandies(vector<int>& candies, long long k,
-                            int numOfCandies) {
-        // Initialize the total number of children that can be served
-        long long int maxNumOfChildren = 0;
-
-        for (int pileIndex = 0; pileIndex < candies.size(); pileIndex++) {
-            maxNumOfChildren +=
-                candies[pileIndex] /
-                numOfCandies;  // Add the number of children this pile can serve
+private: 
+    bool canAllocate(vector<int>& candies, int toAllot, ll children) {
+        ll pilesAlloted = 0;
+        for (int &pileSize : candies) {
+            pilesAlloted += (pileSize / toAllot);
+            if (pilesAlloted >= children) return true;
         }
-
-        return maxNumOfChildren >= k;
+        return false;
     }
 };
