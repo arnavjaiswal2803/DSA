@@ -1,21 +1,18 @@
 class Solution {
 public:
     int numberOfComponents(vector<vector<int>>& properties, int k) {
-        int n = properties.size(), m = properties[0].size();
+        int n = properties.size();
         
-        // vector<vector<int>> edges;
-        vector<vector<int>> adjList(n, vector<int>());
+        vector<vector<int>> edges;
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (intersect(properties[i], properties[j]) >= k) {
-                    // edges.push_back({i, j});
-                    adjList[i].push_back(j);
-                    adjList[j].push_back(i);
+                    edges.push_back({i, j});
                 }
             }
         }
 
-        // vector<vector<int>> adjList = getAdjacencyList(n, edges);
+        vector<vector<int>> adjList = getAdjacencyList(n, edges);
         vector<bool> vis(n, false);
         int connectedComponents = 0;
         for (int i = 0; i < n; i++) {
