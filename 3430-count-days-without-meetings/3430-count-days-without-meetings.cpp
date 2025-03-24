@@ -1,32 +1,18 @@
 class Solution {
 public:
     int countDays(int days, vector<vector<int>>& meetings) {
-        vector<vector<int>> mergedMeetings = mergeIntervals(meetings);
-        int freeDays = days;
+        int n = meetings.size(), freeDays = days;
 
-        for (vector<int> &meeting : mergedMeetings) {
-            freeDays -= (meeting[1] - meeting[0] + 1);
+        sort(meetings.begin(), meetings.end());
+        for (int i = 0; i < n; i++) {
+            int start = meetings[i][0], end = meetings[i][1];
+            while (i < n - 1 && meetings[i + 1][0] <= end) {
+                end = max(end, meetings[i + 1][1]);
+                i++;
+            }
+            freeDays -= (end - start + 1);
         }
 
         return freeDays;
-    }
-
-private:
-    vector<vector<int>> mergeIntervals(vector<vector<int>>& meetings) {
-        int m = meetings.size();
-        vector<vector<int>> mergedMeetings;
-
-        sort(meetings.begin(), meetings.end());
-        mergedMeetings.push_back(meetings[0]);
-        for (int i = 1; i < m; i++) {
-            if (meetings[i][0] <= mergedMeetings.back()[1]) {
-                mergedMeetings.back()[1] =
-                    max(mergedMeetings.back()[1], meetings[i][1]);
-            } else {
-                mergedMeetings.push_back(meetings[i]);
-            }
-        }
-
-        return mergedMeetings;
     }
 };
