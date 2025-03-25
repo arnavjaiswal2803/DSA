@@ -1,56 +1,56 @@
 class Solution {
+    typedef long long ll;
 public:
     int countPaths(int n, vector<vector<int>>& roads) {
+        vector<vector<pair<int, int>>> adjList = getAdjacencyList(n, roads);
+        return dijkstra(n, adjList);
+    }
+
+private:
+    int dijkstra(int n, vector<vector<pair<int, int>>>& adjList) {
         const int MOD = 1e9 + 7;
 
-        // Build adjacency list
-        vector<vector<pair<int, int>>> graph(n);
-        for (auto& road : roads) {
-            int startNode = road[0], endNode = road[1], travelTime = road[2];
-            graph[startNode].emplace_back(endNode, travelTime);
-            graph[endNode].emplace_back(startNode, travelTime);
-        }
-
-        // Min-Heap (priority queue) for Dijkstra
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>,
-                       greater<>>
+        vector<int> ways(n, 0);
+        vector<ll> shortestTime(n, 1e18);
+        priority_queue<pair<ll, int>, vector<pair<ll, int>>, greater<>>
             minHeap;
 
-        // Store shortest time to each node
-        vector<long long> shortestTime(n, LLONG_MAX);
-        // Number of ways to reach each node in shortest time
-        vector<int> pathCount(n, 0);
-
-        shortestTime[0] = 0;  // Distance to source is 0
-        pathCount[0] = 1;     // 1 way to reach node 0
-
-        minHeap.emplace(0, 0);  // {time, node}
+        ways[0] = 1;
+        shortestTime[0] = 0;
+        minHeap.push({shortestTime[0], 0});
 
         while (!minHeap.empty()) {
-            long long currTime = minHeap.top().first;  // Current shortest time
-            int currNode = minHeap.top().second;
+            ll currTime = minHeap.top().first;
+            int node = minHeap.top().second;
             minHeap.pop();
 
-            // Skip outdated distances
-            if (currTime > shortestTime[currNode]) continue;
+            for (pair<int, int>& it : adjList[node]) {
+                int adjNode = it.first, wt = it.second;
 
-            for (auto& [neighborNode, roadTime] : graph[currNode]) {
-                // Found a new shortest path → Update shortest time and reset
-                // path count
-                if (currTime + roadTime < shortestTime[neighborNode]) {
-                    shortestTime[neighborNode] = currTime + roadTime;
-                    pathCount[neighborNode] = pathCount[currNode];
-                    minHeap.emplace(shortestTime[neighborNode], neighborNode);
-                }
-                // Found another way with the same shortest time → Add to path
-                // count
-                else if (currTime + roadTime == shortestTime[neighborNode]) {
-                    pathCount[neighborNode] =
-                        (pathCount[neighborNode] + pathCount[currNode]) % MOD;
+                if (currTime + wt < shortestTime[adjNode]) {
+                    shortestTime[adjNode] = currTime + wt;
+                    minHeap.push({shortestTime[adjNode], adjNode});
+                    ways[adjNode] = ways[node];
+
+                } else if (currTime + wt == shortestTime[adjNode]) {
+                    ways[adjNode] = (ways[adjNode] + ways[node]) % MOD;
                 }
             }
         }
 
-        return pathCount[n - 1];
+        return ways[n - 1];
+    }
+
+    vector<vector<pair<int, int>>>
+    getAdjacencyList(int n, vector<vector<int>>& roads) {
+        vector<vector<pair<int, int>>> adjList(n, vector<pair<int, int>>());
+
+        for (vector<int>& road : roads) {
+            int u = road[0], v = road[1], wt = road[2];
+            adjList[u].push_back({v, wt});
+            adjList[v].push_back({u, wt});
+        }
+
+        return adjList;
     }
 };
