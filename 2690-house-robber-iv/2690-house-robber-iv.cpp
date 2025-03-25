@@ -1,29 +1,34 @@
 class Solution {
 public:
     int minCapability(vector<int>& nums, int k) {
-        // Store the maximum nums value in maxReward.
-        int minReward = 1, maxReward = *max_element(nums.begin(), nums.end()),
-            totalHouses = nums.size();
+        int n = nums.size();
+        vector<int> numsCopy(nums);
 
-        // Use binary search to find the minimum reward possible.
-        while (minReward < maxReward) {
-            int midReward = (minReward + maxReward) / 2;
-            int possibleThefts = 0;
+        sort(numsCopy.begin(), numsCopy.end());
 
-            for (int index = 0; index < totalHouses; ++index) {
-                if (nums[index] <= midReward) {
-                    possibleThefts += 1;
-                    index++;  // Skip the next house to maintain the
-                              // non-adjacent condition
-                }
-            }
+        int low = 0, high = n - 1;
+        while (low <= high) {
+            int mid = (low + ((high - low) >> 1));
 
-            if (possibleThefts >= k)
-                maxReward = midReward;
-            else
-                minReward = midReward + 1;
+            if (canSteal(nums, k, numsCopy[mid])) high = mid - 1;
+            else low = mid + 1;
         }
 
-        return minReward;
+        return numsCopy[low];
+    }
+
+private:
+    bool canSteal(vector<int>& nums, int k, int capability) {
+        if (k == 1) return true;
+
+        int robCnt = 0, n = nums.size();
+        for (int i = 0; i < n; i++) {
+            if (nums[i] <= capability) {
+                robCnt++;
+                if (robCnt >= k) return true;
+                i++;
+            }
+        }
+        return false;
     }
 };
