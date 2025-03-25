@@ -17,12 +17,9 @@ public:
 private:
     bool canRepair(vector<int> &ranks, int cars, long long maxTime) {
         int repairedCars = 0;
-        long long sqRoot = sqrt(maxTime);
 
         for (int &rank : ranks) {
-            long long carsToRepair = sqRoot;
-            while (rank * carsToRepair * carsToRepair > maxTime) carsToRepair--;
-            repairedCars += carsToRepair;
+            repairedCars += sqrt(maxTime / rank);
             if (repairedCars >= cars) return true;
         }
 
