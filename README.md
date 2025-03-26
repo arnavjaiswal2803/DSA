@@ -147,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/arnavjaiswal2803/DSA/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2107-find-unique-binary-string](https://github.com/arnavjaiswal2803/DSA/tree/master/2107-find-unique-binary-string) |
 | [2145-grid-game](https://github.com/arnavjaiswal2803/DSA/tree/master/2145-grid-game) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2162-partition-array-into-two-arrays-to-minimize-sum-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/2162-partition-array-into-two-arrays-to-minimize-sum-difference) |
 | [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/arnavjaiswal2803/DSA/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
@@ -556,6 +557,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1477-product-of-the-last-k-numbers](https://github.com/arnavjaiswal2803/DSA/tree/master/1477-product-of-the-last-k-numbers) |
 | [1631-number-of-sub-arrays-with-odd-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/1631-number-of-sub-arrays-with-odd-sum) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/arnavjaiswal2803/DSA/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2448-count-number-of-bad-pairs](https://github.com/arnavjaiswal2803/DSA/tree/master/2448-count-number-of-bad-pairs) |
 | [2610-closest-prime-numbers-in-range](https://github.com/arnavjaiswal2803/DSA/tree/master/2610-closest-prime-numbers-in-range) |
 | [2649-count-total-number-of-colored-cells](https://github.com/arnavjaiswal2803/DSA/tree/master/2649-count-total-number-of-colored-cells) |
@@ -585,6 +587,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/arnavjaiswal2803/DSA/tree/master/1256-rank-transform-of-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/arnavjaiswal2803/DSA/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1669-minimum-cost-to-cut-a-stick](https://github.com/arnavjaiswal2803/DSA/tree/master/1669-minimum-cost-to-cut-a-stick) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2164-two-best-non-overlapping-events](https://github.com/arnavjaiswal2803/DSA/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/arnavjaiswal2803/DSA/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/arnavjaiswal2803/DSA/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
@@ -954,6 +957,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1876-map-of-highest-peak](https://github.com/arnavjaiswal2803/DSA/tree/master/1876-map-of-highest-peak) |
 | [2047-find-a-peak-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/2047-find-a-peak-element-ii) |
 | [2145-grid-game](https://github.com/arnavjaiswal2803/DSA/tree/master/2145-grid-game) |
+| [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/arnavjaiswal2803/DSA/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/arnavjaiswal2803/DSA/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2685-first-completely-painted-row-or-column](https://github.com/arnavjaiswal2803/DSA/tree/master/2685-first-completely-painted-row-or-column) |
