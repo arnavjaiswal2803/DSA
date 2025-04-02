@@ -199,6 +199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2888-minimum-index-of-a-valid-split](https://github.com/arnavjaiswal2803/DSA/tree/master/2888-minimum-index-of-a-valid-split) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/arnavjaiswal2803/DSA/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [2917-count-pairs-whose-sum-is-less-than-target](https://github.com/arnavjaiswal2803/DSA/tree/master/2917-count-pairs-whose-sum-is-less-than-target) |
+| [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/arnavjaiswal2803/DSA/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/arnavjaiswal2803/DSA/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/arnavjaiswal2803/DSA/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3227-find-missing-and-repeated-values](https://github.com/arnavjaiswal2803/DSA/tree/master/3227-find-missing-and-repeated-values) |
