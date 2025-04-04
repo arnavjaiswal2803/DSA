@@ -17,18 +17,10 @@ func calculateMaxPathSum(root *TreeNode, maxxPathSum *int) int {
         return 0
     }
 
-    leftPathSum := calculateMaxPathSum(root.Left, maxxPathSum)
-    rightPathSum := calculateMaxPathSum(root.Right, maxxPathSum)
+    leftPathSum := max(0, calculateMaxPathSum(root.Left, maxxPathSum))
+    rightPathSum := max(0, calculateMaxPathSum(root.Right, maxxPathSum))
 
-    if leftPathSum > 0 && rightPathSum > 0 {
-        *maxxPathSum = max(*maxxPathSum, root.Val + leftPathSum + rightPathSum)
-    } else if leftPathSum > 0 {
-        *maxxPathSum = max(*maxxPathSum, root.Val + leftPathSum)
-    } else if rightPathSum > 0 {
-        *maxxPathSum = max(*maxxPathSum, root.Val + rightPathSum)
-    } else {
-        *maxxPathSum = max(*maxxPathSum, root.Val)
-    }
+    *maxxPathSum = max(*maxxPathSum, root.Val + leftPathSum + rightPathSum)
 
     return root.Val + max(0, leftPathSum, rightPathSum)
 }
