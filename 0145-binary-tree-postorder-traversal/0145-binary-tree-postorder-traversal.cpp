@@ -15,22 +15,29 @@ public:
         vector<int> postorder;
         if (root == NULL) return postorder;
 
-        stack<TreeNode*> st1, st2;
-        st1.push(root);
+        stack<TreeNode*> st;
+        TreeNode* curr = root;
 
-        while (!st1.empty()) {
-            TreeNode* node = st1.top();
-            st1.pop();
+        while (!st.empty() || curr != NULL) {
+            if (curr != NULL) {
+                st.push(curr);
+                curr = curr->left;
+            } else {
+                TreeNode* temp = st.top();
+                if (temp->right != NULL) {
+                    curr = temp->right;
+                } else {
+                    st.pop();
 
-            st2.push(node);
+                    postorder.push_back(temp->val);
 
-            if (node->left) st1.push(node->left);
-            if (node->right) st1.push(node->right);
-        }
-
-        while (!st2.empty()) {
-            postorder.push_back(st2.top()->val);
-            st2.pop();
+                    while (!st.empty() && st.top()->right == temp) {
+                        temp = st.top();
+                        st.pop();
+                        postorder.push_back(temp->val);
+                    }
+                }
+            }
         }
 
         return postorder;
