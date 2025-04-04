@@ -7,22 +7,26 @@
  * }
  */
 func isBalanced(root *TreeNode) bool {
-    isHeightBalanced := true;
-    getHeight(root, &isHeightBalanced)
-    return isHeightBalanced
+    return getHeight(root) != -1
 }
 
-func getHeight(root *TreeNode, isHeightBalanced *bool) int {
+func getHeight(root *TreeNode) int {
     if root == nil {
         return 0
     }
 
-    left := getHeight(root.Left, isHeightBalanced)
-    right := getHeight(root.Right, isHeightBalanced)
-
-    if math.Abs(float64(left) - float64(right)) > 1 {
-        *isHeightBalanced = false
+    leftHeight := getHeight(root.Left)
+    if leftHeight == -1 {
+        return -1
+    }
+    rightHeight := getHeight(root.Right) 
+    if rightHeight == -1 {
+        return -1
     }
 
-    return 1 + max(left, right)
+    if math.Abs(float64(leftHeight) - float64(rightHeight)) > 1 {
+        return -1
+    }
+
+    return 1 + max(leftHeight, rightHeight)
 }
