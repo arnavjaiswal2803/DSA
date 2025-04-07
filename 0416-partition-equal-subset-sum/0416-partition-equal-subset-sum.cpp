@@ -1,31 +1,26 @@
 class Solution {
-    bool isSubsetSum(vector<int>& arr, int target) {
-        // code here
-        int n = arr.size();
-        vector<bool> prev (target + 1, false);
-        
-        for (int idx = 0; idx < n; idx++) {
-            vector<bool> curr (target + 1, false);
-            for (int tar = 0; tar <= target; tar++) {
-                if (tar == 0) curr[tar] = true;
-                else if (idx == 0) curr[tar] = arr[idx] == tar;
-                else {
-                    bool pick = false, notPick = prev[tar];
-                    if (!notPick && arr[idx] <= tar) 
-                        pick = prev[tar - arr[idx]];
-                    curr[tar] = (pick || notPick);
-                }
-            }
-            prev = curr;
-        }
-        
-        return prev[target];
-    }
 public:
     bool canPartition(vector<int>& nums) {
-        int n = nums.size(), sum = 0;
-        for (int i = 0; i < n; i++) sum += nums[i];
-        if (sum & 1) return false;
-        return isSubsetSum(nums, sum / 2);
+        int n = nums.size(), totalSum = accumulate(nums.begin(), nums.end(), 0);
+        if (totalSum & 1)
+            return false;
+        int target = totalSum / 2;
+        vector<vector<int>> dp(n, vector<int>(target + 1, -1));
+        return isTargetPossible(nums, n - 1, target, dp);
+    }
+
+private:
+    bool isTargetPossible(vector<int>& nums, int idx, int target,
+                          vector<vector<int>>& dp) {
+        if (target == 0) return true;
+        if (idx == -1) return false;
+
+        if (dp[idx][target] != -1) return dp[idx][target];
+
+        bool notTake = isTargetPossible(nums, idx - 1, target, dp), take = false;
+        if (nums[idx] <= target) {
+            take = isTargetPossible(nums, idx - 1, target - nums[idx], dp);
+        }
+        return dp[idx][target] = notTake || take;
     }
 };
