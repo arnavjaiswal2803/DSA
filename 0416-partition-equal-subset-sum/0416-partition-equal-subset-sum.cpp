@@ -9,22 +9,26 @@ public:
 
 private:
     bool isTargetPossible(vector<int>& nums, int idx, int target) {
-        vector<vector<bool>> dp(nums.size(), vector<bool>(target + 1, false));
+        vector<bool> prev(target + 1, false);
 
         for (int i = 0; i <= idx; i++) {
+            vector<bool> curr(target + 1, false);
+
             for (int t = 0; t <= target; t++) {
-                if (i == 0) dp[i][t] = nums[i] == t;
-                else if (t == 0) dp[i][t] = true;
+                if (i == 0) curr[t] = nums[i] == t;
+                else if (t == 0) curr[t] = true;
                 else {
-                    bool notTake = dp[i - 1][t], take = false;
+                    bool notTake = prev[t], take = false;
                     if (nums[i] <= t) {
-                        take = dp[i - 1][t - nums[i]];
+                        take = prev[t - nums[i]];
                     }
-                    dp[i][t] = take || notTake;
+                    curr[t] = take || notTake;
                 }
             }
+
+            prev = curr;
         }
 
-        return dp[idx][target];
+        return prev[target];
     }
 };
