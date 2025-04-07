@@ -13,7 +13,7 @@ private:
     bool isTargetPossible(vector<int>& nums, int idx, int target,
                           vector<vector<int>>& dp) {
         if (target == 0) return true;
-        if (idx == -1) return false;
+        if (idx == 0) return nums[0] == target;
 
         if (dp[idx][target] != -1) return dp[idx][target];
 
