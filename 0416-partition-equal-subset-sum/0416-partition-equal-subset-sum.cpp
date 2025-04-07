@@ -19,7 +19,7 @@ private:
                 else if (t == 0) curr[t] = true;
                 else {
                     bool notTake = prev[t], take = false;
-                    if (nums[i] <= t) {
+                    if (!notTake && nums[i] <= t) {
                         take = prev[t - nums[i]];
                     }
                     curr[t] = take || notTake;
