@@ -1,26 +1,30 @@
 class Solution {
 public:
     bool canPartition(vector<int>& nums) {
-        int n = nums.size(), totalSum = accumulate(nums.begin(), nums.end(), 0);
-        if (totalSum & 1)
-            return false;
+        int totalSum = accumulate(nums.begin(), nums.end(), 0);
+        if (totalSum & 1) return false;
         int target = totalSum / 2;
-        vector<vector<int>> dp(n, vector<int>(target + 1, -1));
-        return isTargetPossible(nums, n - 1, target, dp);
+        return isTargetPossible(nums, nums.size() - 1, target);
     }
 
 private:
-    bool isTargetPossible(vector<int>& nums, int idx, int target,
-                          vector<vector<int>>& dp) {
-        if (target == 0) return true;
-        if (idx == 0) return nums[0] == target;
+    bool isTargetPossible(vector<int>& nums, int idx, int target) {
+        vector<vector<bool>> dp(nums.size(), vector<bool>(target + 1, false));
 
-        if (dp[idx][target] != -1) return dp[idx][target];
-
-        bool notTake = isTargetPossible(nums, idx - 1, target, dp), take = false;
-        if (nums[idx] <= target) {
-            take = isTargetPossible(nums, idx - 1, target - nums[idx], dp);
+        for (int i = 0; i <= idx; i++) {
+            for (int t = 0; t <= target; t++) {
+                if (i == 0) dp[i][t] = nums[i] == t;
+                else if (t == 0) dp[i][t] = true;
+                else {
+                    bool notTake = dp[i - 1][t], take = false;
+                    if (nums[i] <= t) {
+                        take = dp[i - 1][t - nums[i]];
+                    }
+                    dp[i][t] = take || notTake;
+                }
+            }
         }
-        return dp[idx][target] = notTake || take;
+
+        return dp[idx][target];
     }
 };
