@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0493-reverse-pairs](https://github.com/arnavjaiswal2803/DSA/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/arnavjaiswal2803/DSA/tree/master/0494-target-sum) |
 | [0496-next-greater-element-i](https://github.com/arnavjaiswal2803/DSA/tree/master/0496-next-greater-element-i) |
+| [0502-ipo](https://github.com/arnavjaiswal2803/DSA/tree/master/0502-ipo) |
 | [0503-next-greater-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0503-next-greater-element-ii) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [0560-subarray-sum-equals-k](https://github.com/arnavjaiswal2803/DSA/tree/master/0560-subarray-sum-equals-k) |
@@ -465,6 +466,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0023-merge-k-sorted-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0023-merge-k-sorted-lists) |
 | [0239-sliding-window-maximum](https://github.com/arnavjaiswal2803/DSA/tree/master/0239-sliding-window-maximum) |
 | [0407-trapping-rain-water-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0407-trapping-rain-water-ii) |
+| [0502-ipo](https://github.com/arnavjaiswal2803/DSA/tree/master/0502-ipo) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/arnavjaiswal2803/DSA/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1304-longest-happy-string](https://github.com/arnavjaiswal2803/DSA/tree/master/1304-longest-happy-string) |
@@ -598,6 +600,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0229-majority-element-ii) |
 | [0368-largest-divisible-subset](https://github.com/arnavjaiswal2803/DSA/tree/master/0368-largest-divisible-subset) |
 | [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
+| [0502-ipo](https://github.com/arnavjaiswal2803/DSA/tree/master/0502-ipo) |
 | [0539-minimum-time-difference](https://github.com/arnavjaiswal2803/DSA/tree/master/0539-minimum-time-difference) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0780-max-chunks-to-make-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/0780-max-chunks-to-make-sorted) |
@@ -678,6 +681,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/arnavjaiswal2803/DSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0179-largest-number](https://github.com/arnavjaiswal2803/DSA/tree/master/0179-largest-number) |
 | [0455-assign-cookies](https://github.com/arnavjaiswal2803/DSA/tree/master/0455-assign-cookies) |
+| [0502-ipo](https://github.com/arnavjaiswal2803/DSA/tree/master/0502-ipo) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/arnavjaiswal2803/DSA/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0670-maximum-swap](https://github.com/arnavjaiswal2803/DSA/tree/master/0670-maximum-swap) |
 | [0780-max-chunks-to-make-sorted](https://github.com/arnavjaiswal2803/DSA/tree/master/0780-max-chunks-to-make-sorted) |
